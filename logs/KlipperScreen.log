@@ -1208,3 +1208,4 @@ invert_y = True
 2024-04-04 02:24:16,021 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/config
 2024-04-04 02:24:16,050 [screen.py:init_tempstore()] - Temperature store size: 1200
 2024-04-04 02:24:23,506 [screen.py:show_popup_message()] - error: // Unknown command:"RESTORE"
+2024-04-04 02:25:15,001 [screen.py:show_popup_message()] - error: // Unknown command:"UNINSTALL_BAK_UTIL"
