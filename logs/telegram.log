@@ -5946,3 +5946,31 @@ Traceback (most recent call last):
   File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
     raise BadRequest(message)
 telegram.error.BadRequest: Canceled by new editmessagemedia request
+
+*******************************************************************
+Current Moonraker telegram bot config
+[bot]
+server = localhost
+
+[camera]
+host = http://localhost:8080/?action=stream
+
+[progress_notification]
+percent = 5
+height = 5
+time = 5
+
+[timelapse]
+cleanup = true
+height = 0.2
+time = 5
+target_fps = 30
+
+[telegram_ui]
+progress_update_message = true
+
+
+*******************************************************************
+2024-04-04 05:17:36,646 - __main__ - ERROR - 
+
+2024-04-04 06:23:24,745 - websocket_helper - ERROR - 'gcode_position'
