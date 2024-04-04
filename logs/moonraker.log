@@ -1521,3 +1521,75 @@ Properties:
 2024-04-04 02:24:10,804 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
 2024-04-04 02:24:22,927 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 4.11ms
 2024-04-04 02:24:22,928 [websockets.py:open()] - Websocket Opened: ID: 281473387830576, Proxied: True, User Agent: , Host Name: localhost
+2024-04-04 02:43:43,921 [websockets.py:on_close()] - Websocket Closed: ID: 281473387492928 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.76
+2024-04-04 02:43:45,027 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 6.41ms
+2024-04-04 02:43:45,028 [websockets.py:open()] - Websocket Opened: ID: 281473387492544, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-04 02:43:45,501 [websockets.py:_handle_identify()] - Websocket 281473387492544 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-04 02:44:12,903 [websockets.py:on_close()] - Websocket Closed: ID: 281473387492544 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.41
+2024-04-04 02:44:13,957 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.57ms
+2024-04-04 02:44:13,958 [websockets.py:open()] - Websocket Opened: ID: 281473369692672, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-04 02:44:14,199 [websockets.py:_handle_identify()] - Websocket 281473369692672 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-04 02:48:29,363 [websockets.py:on_close()] - Websocket Closed: ID: 281473387494080 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.93
+2024-04-04 02:48:29,404 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-04 02:48:29,468 [websockets.py:on_close()] - Websocket Closed: ID: 281473387830576 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.54
+2024-04-04 02:48:29,746 [server.py:_handle_term_signal()] - Exiting with signal SIGTERM
+2024-04-04 02:48:29,863 [websockets.py:on_close()] - Websocket Closed: ID: 281473369692672 Close Code: 1001, Close Reason: Server Shutdown, Pong Time Elapsed: 5.90
+2024-04-04 02:48:29,879 [database.py:close()] - Database statistics:
+
+announcements:
+psize: 4096
+depth: 0
+branch_pages: 0
+leaf_pages: 0
+overflow_pages: 0
+entries: 0
+authorized_users:
+psize: 4096
+depth: 1
+branch_pages: 0
+leaf_pages: 1
+overflow_pages: 0
+entries: 1
+gcode_metadata:
+psize: 4096
+depth: 2
+branch_pages: 1
+leaf_pages: 9
+overflow_pages: 0
+entries: 55
+history:
+psize: 4096
+depth: 0
+branch_pages: 0
+leaf_pages: 0
+overflow_pages: 0
+entries: 0
+mainsail:
+psize: 4096
+depth: 1
+branch_pages: 0
+leaf_pages: 1
+overflow_pages: 0
+entries: 5
+moonraker:
+psize: 4096
+depth: 1
+branch_pages: 0
+leaf_pages: 1
+overflow_pages: 0
+entries: 8
+update_manager:
+psize: 4096
+depth: 2
+branch_pages: 1
+leaf_pages: 6
+overflow_pages: 0
+entries: 13
+webcams:
+psize: 4096
+depth: 1
+branch_pages: 0
+leaf_pages: 1
+overflow_pages: 0
+entries: 1
+2024-04-04 02:48:29,893 [server.py:main()] - Server Shutdown
