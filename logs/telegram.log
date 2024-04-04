@@ -6852,3 +6852,31 @@ progress_update_message = true
 2024-04-04 16:56:51,155 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
 2024-04-04 16:56:51,189 - klippy - ERROR - Klippy Host not connected
 2024-04-04 16:58:01,380 - websocket_helper - ERROR - 'gcode_position'
+
+*******************************************************************
+Current Moonraker telegram bot config
+[bot]
+server = localhost
+
+[camera]
+host = http://localhost:8080/?action=stream
+
+[progress_notification]
+percent = 5
+height = 5
+time = 5
+
+[timelapse]
+cleanup = true
+height = 0.2
+time = 5
+target_fps = 30
+
+[telegram_ui]
+progress_update_message = true
+
+
+*******************************************************************
+2024-04-04 17:00:21,432 - __main__ - ERROR - 
+
+2024-04-04 17:00:42,500 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_shutdown
