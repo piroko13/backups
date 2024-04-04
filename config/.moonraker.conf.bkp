@@ -27,6 +27,8 @@ cors_domains =
 
 [history]
 
+[timelapse]
+
 [announcements]
 subscriptions = 
 	mainsail

@@ -5579,3 +5579,370 @@ progress_update_message = true
 *******************************************************************
 2024-04-04 02:24:20,843 - __main__ - ERROR - 
 
+
+*******************************************************************
+Current Moonraker telegram bot config
+[bot]
+server = localhost
+
+[camera]
+host = http://localhost:8080/?action=stream
+
+[progress_notification]
+percent = 5
+height = 5
+time = 5
+
+[timelapse]
+cleanup = true
+height = 0.2
+time = 5
+target_fps = 30
+
+[telegram_ui]
+progress_update_message = true
+
+
+*******************************************************************
+2024-04-04 02:49:03,554 - __main__ - ERROR - 
+
+2024-04-04 02:49:04,295 - klippy - ERROR - Not Found
+2024-04-04 02:49:05,558 - websocket_helper - WARNING - Error received from websocket: {'code': -32601, 'message': 'Method not found'}
+2024-04-04 02:49:07,237 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
+2024-04-04 02:49:07,269 - klippy - ERROR - Klippy Host not connected
+2024-04-04 02:54:55,663 - websocket_helper - INFO - WebSocket closed
+2024-04-04 02:54:55,665 - websocket_helper - ERROR - WebSocket close status code: 1001
+2024-04-04 02:54:55,666 - websocket_helper - ERROR - WebSocket close message: Server Shutdown
+2024-04-04 02:54:55,668 - __main__ - INFO - Exiting! Moonraker connection lost!
+
+*******************************************************************
+Current Moonraker telegram bot config
+[bot]
+server = localhost
+
+[camera]
+host = http://localhost:8080/?action=stream
+
+[progress_notification]
+percent = 5
+height = 5
+time = 5
+
+[timelapse]
+cleanup = true
+height = 0.2
+time = 5
+target_fps = 30
+
+[telegram_ui]
+progress_update_message = true
+
+
+*******************************************************************
+2024-04-04 02:55:16,687 - __main__ - ERROR - 
+
+2024-04-04 03:41:40,963 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
+2024-04-04 03:41:40,998 - klippy - ERROR - Klippy Host not connected
+2024-04-04 03:52:39,484 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
+2024-04-04 03:52:39,512 - klippy - ERROR - Klippy Host not connected
+2024-04-04 03:53:21,402 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
+2024-04-04 03:53:21,431 - klippy - ERROR - Klippy Host not connected
+2024-04-04 03:53:52,297 - websocket_helper - WARNING - klippy disconnect detected with message: notify_klippy_disconnected
+2024-04-04 03:53:52,326 - klippy - ERROR - Klippy Host not connected
+2024-04-04 04:07:46,589 - websocket_helper - INFO - WebSocket closed
+2024-04-04 04:07:46,591 - websocket_helper - ERROR - WebSocket close status code: 1001
+2024-04-04 04:07:46,592 - websocket_helper - ERROR - WebSocket close message: Server Shutdown
+2024-04-04 04:07:46,594 - __main__ - INFO - Exiting! Moonraker connection lost!
+
+*******************************************************************
+Current Moonraker telegram bot config
+[bot]
+server = localhost
+
+[camera]
+host = http://localhost:8080/?action=stream
+
+[progress_notification]
+percent = 5
+height = 5
+time = 5
+
+[timelapse]
+cleanup = true
+height = 0.2
+time = 5
+target_fps = 30
+
+[telegram_ui]
+progress_update_message = true
+
+
+*******************************************************************
+2024-04-04 04:08:11,694 - __main__ - ERROR - 
+
+2024-04-04 04:40:01,893 - websocket_helper - ERROR - 'gcode_position'
+2024-04-04 04:50:28,965 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 04:52:58,584 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 04:52:59,246 - __main__ - ERROR - Job notifier_timer raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 364, in _notify_by_time
+    self._schedule_notification()
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 337, in _schedule_notification
+    self._notify(mess, self._silent_progress, self._group_only)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 04:55:08,081 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 04:55:08,697 - __main__ - ERROR - Job 9f9165371a3047abb760284d2aec252c raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 04:56:47,967 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 04:58:38,742 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:00:10,595 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:01:37,863 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:03:27,864 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:05:04,160 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:06:48,046 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:06:48,664 - __main__ - ERROR - Job 5ff43803c38e4ae48359646536024aa5 raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:08:48,797 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:10:52,903 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:12:52,885 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:12:53,848 - __main__ - ERROR - Job e0ab992d8018465295ee6af471aed975 raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:14:53,292 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:14:54,023 - __main__ - ERROR - Job notifier_timer raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 364, in _notify_by_time
+    self._schedule_notification()
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 337, in _schedule_notification
+    self._notify(mess, self._silent_progress, self._group_only)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:16:54,349 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:17:12,939 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:17:13,733 - __main__ - ERROR - Job d1ce178936bc4c1d8ae18cb6a464f8c8 raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:18:52,885 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:20:22,869 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:20:28,939 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:23:07,858 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:24:52,844 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:25:42,855 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:25:43,610 - __main__ - ERROR - Job b5cac6fd08f74e67917ef046c3e1f42b raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:27:03,398 - notifications - WARNING - Failed deleting bzz message 
+Message to delete not found
+2024-04-04 05:27:04,042 - __main__ - ERROR - Job notifier_timer raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 364, in _notify_by_time
+    self._schedule_notification()
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 337, in _schedule_notification
+    self._notify(mess, self._silent_progress, self._group_only)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
+2024-04-04 05:27:04,322 - __main__ - ERROR - Job 65ef3053fdfa4ed0b3ff6aa1f76c03cb raisedCanceled by new editmessagemedia request
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/home/biqu/moonraker-telegram-bot/bot/notifications.py", line 189, in _notify
+    self._status_message.edit_media(media=InputMediaPhoto(photo))
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/message.py", line 2327, in edit_media
+    return self.bot.edit_message_media(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 134, in decorator
+    result = func(*args, **kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 3002, in edit_message_media
+    return self._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/ext/extbot.py", line 203, in _message
+    result = super()._message(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 344, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/bot.py", line 299, in _post
+    return self.request.post(
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 359, in post
+    result = self._request_wrapper('POST', url, fields=data, **urlopen_kwargs)
+  File "/home/biqu/moonraker-telegram-bot-env/lib/python3.9/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Canceled by new editmessagemedia request
