@@ -3260,3 +3260,998 @@ System Info:
 2024-04-05 07:17:27,004 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
 2024-04-05 07:17:27,005 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
 2024-04-05 07:17:27,008 [machine.py:validation_init()] - Installation version in database up to date
+2024-04-05 07:17:29,266 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-04-05 07:17:29,298 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.184
+2024-04-05 07:17:29,308 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.184
+2024-04-05 07:17:29,454 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['network-online.target', 'system.slice', 'sysinit.target', '-.mount']
+**After=['system.slice', '-.mount', 'systemd-journald.socket', 'network-online.target', 'sysinit.target', 'basic.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/biqu/printer_data/systemd/moonraker.env
+**ExecStart=/home/biqu/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/biqu/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=biqu
+2024-04-05 07:17:29,454 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-04-05 07:17:29,455 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-04-05 07:17:29,462 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-04-05 07:17:29,463 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.184
+2024-04-05 07:17:29,465 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-04-05 07:17:29,467 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['-.mount', 'sysinit.target', 'system.slice']
+**After=['klipper-mcu.service', 'basic.target', 'network-online.target', 'sysinit.target', 'systemd-journald.socket', 'system.slice', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/biqu/printer_data/systemd/klipper.env
+**ExecStart=/home/biqu/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/biqu/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=biqu
+2024-04-05 07:17:29,467 [server.py:_initialize_component()] - Performing Component Post Init: [timelapse]
+2024-04-05 07:17:29,468 [timelapse.py:parseWebcamConfig()] - snapshoturl: http://localhost/webcam/?action=snapshot, Flip V/H: False/False, rotation: 0
+2024-04-05 07:17:29,468 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-04-05 07:17:29,477 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2024-04-05 07:17:29,478 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-04-05 07:17:30,300 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-04-05 07:17:30,305 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/biqu/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 99b97afc7de1ed16ddc7db29ab6354bd6ea3dfb7
+Upstream Commit SHA: 99b97afc7de1ed16ddc7db29ab6354bd6ea3dfb7
+Current Version: v0.8.0-325-g99b97afc
+Upstream Version: v0.8.0-325-g99b97afc
+Rollback Commit: a3e4dac5fb20f8dfc0857a252eef5219d5e0ec4c
+Rollback Branch: master
+Rollback Version: v0.8.0-324-ga3e4dac5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['moonraker/components/timelapse.py']
+2024-04-05 07:17:30,308 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/biqu/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 75a40e817db4d5bc9d7d893fad499907d2b910a2
+Upstream Commit SHA: 75a40e817db4d5bc9d7d893fad499907d2b910a2
+Current Version: v0.12.0-139-g75a40e81
+Upstream Version: v0.12.0-139-g75a40e81
+Rollback Commit: 5e280680c54efb594f312aacea585851d4956d66
+Rollback Branch: master
+Rollback Version: v0.12.0-138-g5e280680
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/led_effect.py']
+2024-04-05 07:17:30,313 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/biqu/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Rollback Branch: master
+Rollback Version: v1.2.1-0-ge57810d5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,348 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/biqu/mainsail
+Local Version: v2.10.0
+Remote Version: v2.10.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.10.0/mainsail.zip
+Download Size: 2081565
+Content Type: application/zip
+Rollback Version: v2.10.0
+Rollback Repo: mainsail-crew/mainsail
+2024-04-05 07:17:30,353 [git_deploy.py:log_repo_info()] - Git Repo crowsnest Detected:
+Owner: mainsail-crew
+Repository Name: crowsnest
+Path: /home/biqu/crowsnest
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/crowsnest.git
+Recovery URL: https://github.com/mainsail-crew/crowsnest.git
+Current Commit SHA: 6ac4711e17f6f7c51998d1f928166fdaee383bf7
+Upstream Commit SHA: 6ac4711e17f6f7c51998d1f928166fdaee383bf7
+Current Version: v4.1.8-1-g6ac4711e
+Upstream Version: v4.1.8-1-g6ac4711e
+Rollback Commit: e96cd46ffb4a42ae1fbf23118caa68dd0dac0597
+Rollback Branch: master
+Rollback Version: v4.1.6-1-ge96cd46f
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,356 [git_deploy.py:log_repo_info()] - Git Repo sonar Detected:
+Owner: mainsail-crew
+Repository Name: sonar
+Path: /home/biqu/sonar
+Remote: origin
+Branch: main
+Remote URL: https://github.com/mainsail-crew/sonar.git
+Recovery URL: https://github.com/mainsail-crew/sonar.git
+Current Commit SHA: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Upstream Commit SHA: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Current Version: v0.1.3-1-geacc498a
+Upstream Version: v0.1.3-1-geacc498a
+Rollback Commit: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Rollback Branch: main
+Rollback Version: v0.1.3-1-geacc498a
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,371 [git_deploy.py:log_repo_info()] - Git Repo timelapse Detected:
+Owner: mainsail-crew
+Repository Name: moonraker-timelapse
+Path: /home/biqu/moonraker-timelapse
+Remote: origin
+Branch: main
+Remote URL: https://github.com/mainsail-crew/moonraker-timelapse.git
+Recovery URL: https://github.com/mainsail-crew/moonraker-timelapse.git
+Current Commit SHA: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Upstream Commit SHA: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Current Version: v0.0.1-143-gc7fff11e
+Upstream Version: v0.0.1-143-gc7fff11e
+Rollback Commit: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Rollback Branch: main
+Rollback Version: v0.0.1-143-gc7fff11e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,375 [git_deploy.py:log_repo_info()] - Git Repo print_area_bed_mesh Detected:
+Owner: Turge08
+Repository Name: print_area_bed_mesh
+Path: /home/biqu/print_area_bed_mesh
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Turge08/print_area_bed_mesh.git
+Recovery URL: https://github.com/Turge08/print_area_bed_mesh.git
+Current Commit SHA: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Upstream Commit SHA: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Current Version: v1.2.1-21-g53451c9d
+Upstream Version: v1.2.1-21-g53451c9d
+Rollback Commit: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Rollback Branch: master
+Rollback Version: v1.2.1-21-g53451c9d
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,379 [git_deploy.py:log_repo_info()] - Git Repo KlipperScreen Detected:
+Owner: jordanruthe
+Repository Name: KlipperScreen
+Path: /home/biqu/KlipperScreen
+Remote: origin
+Branch: master
+Remote URL: https://github.com/jordanruthe/KlipperScreen.git
+Recovery URL: https://github.com/jordanruthe/KlipperScreen.git
+Current Commit SHA: e34205a9cfb06a32effaa287360907151e6e0579
+Upstream Commit SHA: e34205a9cfb06a32effaa287360907151e6e0579
+Current Version: v0.3.9-81-ge34205a9
+Upstream Version: v0.3.9-81-ge34205a9
+Rollback Commit: 9e42576bb2d5246fea4e23a88c5cec205a9fb223
+Rollback Branch: master
+Rollback Version: v0.3.9-74-g9e42576b
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,417 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/biqu/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Upstream Commit SHA: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Current Version: v1.1.2-12-gd657271f
+Upstream Version: v1.1.2-12-gd657271f
+Rollback Commit: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Rollback Branch: main
+Rollback Version: v1.1.2-12-gd657271f
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,433 [git_deploy.py:log_repo_info()] - Git Repo led_effect Detected:
+Owner: julianschill
+Repository Name: klipper-led_effect
+Path: /home/biqu/klipper-led_effect
+Remote: origin
+Branch: master
+Remote URL: https://github.com/julianschill/klipper-led_effect.git
+Recovery URL: https://github.com/julianschill/klipper-led_effect.git
+Current Commit SHA: c735fe52e1070632919f125513a0552e03739a5f
+Upstream Commit SHA: c735fe52e1070632919f125513a0552e03739a5f
+Current Version: v0.0.10-1-gc735fe52
+Upstream Version: v0.0.10-1-gc735fe52
+Rollback Commit: c735fe52e1070632919f125513a0552e03739a5f
+Rollback Branch: master
+Rollback Version: v0.0.10-1-gc735fe52
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,525 [git_deploy.py:log_repo_info()] - Git Repo moonraker-telegram-bot Detected:
+Owner: nlef
+Repository Name: moonraker-telegram-bot
+Path: /home/biqu/moonraker-telegram-bot
+Remote: origin
+Branch: master
+Remote URL: https://github.com/nlef/moonraker-telegram-bot.git
+Recovery URL: https://github.com/nlef/moonraker-telegram-bot.git
+Current Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Upstream Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Current Version: v1.5-0-gb9b47003
+Upstream Version: v1.5-0-gb9b47003
+Rollback Commit: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Rollback Branch: master
+Rollback Version: v1.5-0-gb9b47003
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-05 07:17:30,526 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 28 Seconds
+2024-04-05 07:17:30,527 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 5 Days, 19 Hours, 37 Minutes, 25 Seconds
+2024-04-05 07:17:30,527 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 5 Days, 5 Hours, 31 Minutes, 24 Seconds
+2024-04-05 07:17:30,528 [base_deploy.py:log_info()] - Git Repo mainsail-config: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 34 Seconds
+2024-04-05 07:17:30,528 [base_deploy.py:log_info()] - Web Client mainsail: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 34 Seconds
+2024-04-05 07:17:30,529 [base_deploy.py:log_info()] - Git Repo crowsnest: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 35 Seconds
+2024-04-05 07:17:30,529 [base_deploy.py:log_info()] - Git Repo sonar: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 36 Seconds
+2024-04-05 07:17:30,529 [base_deploy.py:log_info()] - Git Repo timelapse: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 37 Seconds
+2024-04-05 07:17:30,529 [base_deploy.py:log_info()] - Git Repo print_area_bed_mesh: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 38 Seconds
+2024-04-05 07:17:30,530 [base_deploy.py:log_info()] - Git Repo KlipperScreen: Next refresh in: 5 Days, 5 Hours, 31 Minutes, 6 Seconds
+2024-04-05 07:17:30,530 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 41 Seconds
+2024-04-05 07:17:30,532 [base_deploy.py:log_info()] - Git Repo led_effect: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 42 Seconds
+2024-04-05 07:17:30,532 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Next refresh in: 5 Days, 5 Hours, 30 Minutes, 44 Seconds
+2024-04-05 07:17:30,551 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/biqu/printer_data/comms/moonraker.sock'
+2024-04-05 07:17:30,562 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: BTT-Pi
+2024-04-05 07:17:30,565 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-04-05 07:17:30,821 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 07:17:30,991 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['systemd-journald.socket', 'sysinit.target', '-.mount', 'klipper-mcu.service', 'system.slice', 'network-online.target', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/biqu/printer_data/systemd/klipper.env
+**ExecStart=/home/biqu/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/biqu/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=biqu
+2024-04-05 07:17:31,768 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-139-g75a40e81-dirty
+2024-04-05 07:17:31,815 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-04-05 07:17:31,920 [application.py:log_request()] - 101 GET /websocket?token=5XVFPHOFMMCDBZMRFZUXTCUDL25ACF4Y (127.0.0.1) [_TRUSTED_USER_] 12.38ms
+2024-04-05 07:17:31,921 [websockets.py:open()] - Websocket Opened: ID: 281472915251360, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-04-05 07:17:35,132 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 07:17:35,138 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 07:17:35,145 [klippy_connection.py:_check_ready()] - 
+Internal error during ready callback: invalid literal for int() with base 10: 'SKR_screen(3'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-04-05 07:17:42,989 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 3.77ms
+2024-04-05 07:17:42,990 [websockets.py:open()] - Websocket Opened: ID: 281472915307776, Proxied: True, User Agent: , Host Name: localhost
+2024-04-05 07:17:54,176 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.138
+2024-04-05 07:17:54,179 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 5.50ms
+2024-04-05 07:17:54,180 [websockets.py:open()] - Websocket Opened: ID: 281472915308016, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 07:17:54,480 [websockets.py:_handle_identify()] - Websocket 281472915308016 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 07:17:56,869 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 07:17:56,917 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 20.50ms
+2024-04-05 07:17:58,136 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 07:18:02,816 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 07:18:02,821 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 07:18:02,825 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-04-05 07:18:11,612 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 07:18:11,642 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 6.98ms
+2024-04-05 07:18:12,884 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 07:57:19,531 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 07:57:19,535 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 07:57:19,542 [klippy_connection.py:_check_ready()] - 
+Internal error during ready callback: invalid literal for int() with base 10: 'SKR_screen(3'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-04-05 07:58:11,105 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQS5jRhaGn1O3bkP8
+2024-04-05 07:58:11,144 [application.py:post()] - Processing Uploaded File: led_effects.cfg
+2024-04-05 07:58:11,167 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 66.24ms
+2024-04-05 07:58:11,231 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 07:58:11,265 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 8.95ms
+2024-04-05 07:58:12,498 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 07:58:18,563 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 07:58:18,798 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 07:58:18,804 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 07:58:19,058 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 07:58:19,326 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 07:58:20,084 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 07:59:30,945 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary0dqe5Fw1httZVZSc
+2024-04-05 07:59:30,984 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-05 07:59:31,010 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 66.39ms
+2024-04-05 07:59:32,081 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 07:59:32,109 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 6.74ms
+2024-04-05 07:59:33,353 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 07:59:39,476 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 07:59:39,946 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 07:59:39,952 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 07:59:40,194 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 07:59:40,500 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 07:59:41,207 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:00:40,749 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryD5JNzKmxVuQz640k
+2024-04-05 08:00:40,782 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-05 08:00:40,796 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 48.63ms
+2024-04-05 08:00:41,907 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:00:41,941 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 9.83ms
+2024-04-05 08:00:43,178 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:00:49,322 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:00:49,329 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:00:49,337 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:00:49,574 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:00:49,869 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:00:50,837 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:01:47,927 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryThSCBoXm3vz6s6MR
+2024-04-05 08:01:47,953 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-05 08:01:47,967 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 41.52ms
+2024-04-05 08:01:49,050 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:01:49,079 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 7.08ms
+2024-04-05 08:01:50,321 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:01:56,467 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:01:56,676 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:01:56,682 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:01:56,939 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:01:57,218 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:01:58,202 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:02:31,488 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarynGkB18evbRqOGf5h
+2024-04-05 08:02:31,512 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-05 08:02:31,525 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 46.00ms
+2024-04-05 08:02:32,577 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:02:32,605 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 7.10ms
+2024-04-05 08:02:33,851 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:02:39,934 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:02:40,131 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:02:40,137 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:02:40,385 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:02:40,666 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:02:41,647 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:03:20,342 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryDO89067R4Z79gBSO
+2024-04-05 08:03:20,388 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-04-05 08:03:20,414 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 75.61ms
+2024-04-05 08:03:21,476 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:03:21,507 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 7.70ms
+2024-04-05 08:03:22,748 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:03:28,791 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:03:29,268 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:03:29,275 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:03:29,512 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:03:29,819 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:03:30,527 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:03:55,394 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryLYwD8kAi3bBAKbFL
+2024-04-05 08:03:55,465 [application.py:post()] - Processing Uploaded File: led_effects.cfg
+2024-04-05 08:03:55,490 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 100.05ms
+2024-04-05 08:03:56,541 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:03:56,571 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 7.57ms
+2024-04-05 08:03:57,814 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:04:04,162 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:04:04,167 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:04:04,177 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:04:04,414 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:04:04,697 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:04:05,426 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:14:19,500 [application.py:prepare()] - Upload Request Received from 192.168.0.138
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarydm22aDfI9AjFruRP
+2024-04-05 08:14:19,539 [application.py:post()] - Processing Uploaded File: led_effects.cfg
+2024-04-05 08:14:19,555 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.138) [_TRUSTED_USER_] 58.49ms
+2024-04-05 08:14:20,613 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-04-05 08:14:20,642 [application.py:log_request()] - 503 GET /printer/objects/list (127.0.0.1) [_TRUSTED_USER_] 6.88ms
+2024-04-05 08:14:21,885 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-05 08:14:27,995 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-05 08:14:28,229 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-05 08:14:28,233 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-05 08:14:28,489 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-05 08:14:28,769 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-05 08:14:29,755 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-05 08:17:21,941 [job_state.py:_status_update()] - Job Started: middle_case.gcode
+2024-04-05 08:18:14,315 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472915308016
+2024-04-05 08:18:19,183 [websockets.py:on_close()] - Websocket Closed: ID: 281472915308016 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
+2024-04-05 08:21:22,107 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2024-04-05 08:25:27,223 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000002.jpg) successfully finished
+2024-04-05 08:27:22,159 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000003.jpg) successfully finished
+2024-04-05 08:28:59,835 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000004.jpg) successfully finished
+2024-04-05 08:30:07,893 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000005.jpg) successfully finished
+2024-04-05 08:31:13,474 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000006.jpg) successfully finished
+2024-04-05 08:32:20,598 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000007.jpg) successfully finished
+2024-04-05 08:33:18,967 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000008.jpg) successfully finished
+2024-04-05 08:34:13,637 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000009.jpg) successfully finished
+2024-04-05 08:34:36,924 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.61ms
+2024-04-05 08:34:36,925 [websockets.py:open()] - Websocket Opened: ID: 281472913181616, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 08:34:36,944 [websockets.py:_handle_identify()] - Websocket 281472913181616 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 08:35:11,618 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000010.jpg) successfully finished
+2024-04-05 08:35:36,950 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913181616
+2024-04-05 08:35:41,929 [websockets.py:on_close()] - Websocket Closed: ID: 281472913181616 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-05 08:35:59,361 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000011.jpg) successfully finished
+2024-04-05 08:36:46,630 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000012.jpg) successfully finished
+2024-04-05 08:37:31,059 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000013.jpg) successfully finished
+2024-04-05 08:38:33,362 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000014.jpg) successfully finished
+2024-04-05 08:39:36,174 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000015.jpg) successfully finished
+2024-04-05 08:40:39,942 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000016.jpg) successfully finished
+2024-04-05 08:41:26,748 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000017.jpg) successfully finished
+2024-04-05 08:42:12,140 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000018.jpg) successfully finished
+2024-04-05 08:42:57,106 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000019.jpg) successfully finished
+2024-04-05 08:43:42,058 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000020.jpg) successfully finished
+2024-04-05 08:44:27,219 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000021.jpg) successfully finished
+2024-04-05 08:45:13,190 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000022.jpg) successfully finished
+2024-04-05 08:45:59,295 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000023.jpg) successfully finished
+2024-04-05 08:46:48,455 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000024.jpg) successfully finished
+2024-04-05 08:47:38,126 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000025.jpg) successfully finished
+2024-04-05 08:48:26,318 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000026.jpg) successfully finished
+2024-04-05 08:49:15,057 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000027.jpg) successfully finished
+2024-04-05 08:50:04,260 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000028.jpg) successfully finished
+2024-04-05 08:50:23,416 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.72ms
+2024-04-05 08:50:23,417 [websockets.py:open()] - Websocket Opened: ID: 281472913181280, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 08:50:23,425 [websockets.py:_handle_identify()] - Websocket 281472913181280 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 08:50:50,742 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000029.jpg) successfully finished
+2024-04-05 08:51:36,488 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000030.jpg) successfully finished
+2024-04-05 08:52:22,411 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000031.jpg) successfully finished
+2024-04-05 08:53:08,819 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000032.jpg) successfully finished
+2024-04-05 08:53:55,419 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000033.jpg) successfully finished
+2024-04-05 08:54:41,310 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000034.jpg) successfully finished
+2024-04-05 08:55:26,888 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000035.jpg) successfully finished
+2024-04-05 08:56:11,878 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000036.jpg) successfully finished
+2024-04-05 08:56:56,849 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000037.jpg) successfully finished
+2024-04-05 08:57:42,748 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000038.jpg) successfully finished
+2024-04-05 08:58:29,190 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000039.jpg) successfully finished
+2024-04-05 08:59:16,656 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000040.jpg) successfully finished
+2024-04-05 09:00:02,807 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000041.jpg) successfully finished
+2024-04-05 09:00:53,552 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913181280
+2024-04-05 09:00:58,421 [websockets.py:on_close()] - Websocket Closed: ID: 281472913181280 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-05 09:00:58,645 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000042.jpg) successfully finished
+2024-04-05 09:01:54,089 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000043.jpg) successfully finished
+2024-04-05 09:02:50,056 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000044.jpg) successfully finished
+2024-04-05 09:03:45,765 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000045.jpg) successfully finished
+2024-04-05 09:04:45,557 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000046.jpg) successfully finished
+2024-04-05 09:05:35,287 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000047.jpg) successfully finished
+2024-04-05 09:06:24,587 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000048.jpg) successfully finished
+2024-04-05 09:07:12,361 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000049.jpg) successfully finished
+2024-04-05 09:08:00,207 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000050.jpg) successfully finished
+2024-04-05 09:08:48,194 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000051.jpg) successfully finished
+2024-04-05 09:09:35,385 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000052.jpg) successfully finished
+2024-04-05 09:10:20,921 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000053.jpg) successfully finished
+2024-04-05 09:11:05,120 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000054.jpg) successfully finished
+2024-04-05 09:12:02,032 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000055.jpg) successfully finished
+2024-04-05 09:13:01,020 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000056.jpg) successfully finished
+2024-04-05 09:14:00,222 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000057.jpg) successfully finished
+2024-04-05 09:15:01,183 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000058.jpg) successfully finished
+2024-04-05 09:15:44,602 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000059.jpg) successfully finished
+2024-04-05 09:17:00,200 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000060.jpg) successfully finished
+2024-04-05 09:18:15,100 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000061.jpg) successfully finished
+2024-04-05 09:18:18,182 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.50ms
+2024-04-05 09:18:18,183 [websockets.py:open()] - Websocket Opened: ID: 281472913182672, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 09:18:18,701 [websockets.py:_handle_identify()] - Websocket 281472913182672 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 09:19:35,529 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000062.jpg) successfully finished
+2024-04-05 09:20:57,326 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000063.jpg) successfully finished
+2024-04-05 09:21:27,403 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-04-05 09:21:58,404 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913182672
+2024-04-05 09:22:03,186 [websockets.py:on_close()] - Websocket Closed: ID: 281472913182672 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
+2024-04-05 09:22:15,755 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000064.jpg) successfully finished
+2024-04-05 09:23:02,517 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000065.jpg) successfully finished
+2024-04-05 09:23:49,520 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000066.jpg) successfully finished
+2024-04-05 09:24:29,857 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000067.jpg) successfully finished
+2024-04-05 09:25:11,735 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000068.jpg) successfully finished
+2024-04-05 09:26:31,357 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000069.jpg) successfully finished
+2024-04-05 09:27:50,638 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000070.jpg) successfully finished
+2024-04-05 09:29:09,865 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000071.jpg) successfully finished
+2024-04-05 09:30:24,963 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000072.jpg) successfully finished
+2024-04-05 09:31:32,070 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000073.jpg) successfully finished
+2024-04-05 09:31:59,241 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000074.jpg) successfully finished
+2024-04-05 09:32:36,255 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000075.jpg) successfully finished
+2024-04-05 09:33:13,035 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000076.jpg) successfully finished
+2024-04-05 09:33:49,734 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000077.jpg) successfully finished
+2024-04-05 09:34:26,460 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000078.jpg) successfully finished
+2024-04-05 09:34:55,040 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000079.jpg) successfully finished
+2024-04-05 09:35:24,577 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000080.jpg) successfully finished
+2024-04-05 09:35:55,264 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000081.jpg) successfully finished
+2024-04-05 09:36:24,312 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000082.jpg) successfully finished
+2024-04-05 09:36:52,904 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000083.jpg) successfully finished
+2024-04-05 09:37:21,774 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000084.jpg) successfully finished
+2024-04-05 09:37:29,494 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.35ms
+2024-04-05 09:37:29,495 [websockets.py:open()] - Websocket Opened: ID: 281472913791632, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 09:37:29,668 [websockets.py:_handle_identify()] - Websocket 281472913791632 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 09:37:50,188 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000085.jpg) successfully finished
+2024-04-05 09:38:20,072 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000086.jpg) successfully finished
+2024-04-05 09:38:50,753 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000087.jpg) successfully finished
+2024-04-05 09:39:32,430 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000088.jpg) successfully finished
+2024-04-05 09:39:59,722 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913791632
+2024-04-05 09:40:04,499 [websockets.py:on_close()] - Websocket Closed: ID: 281472913791632 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
+2024-04-05 09:40:04,700 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000089.jpg) successfully finished
+2024-04-05 09:40:37,555 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000090.jpg) successfully finished
+2024-04-05 09:41:07,937 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000091.jpg) successfully finished
+2024-04-05 09:41:39,727 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000092.jpg) successfully finished
+2024-04-05 09:42:10,675 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000093.jpg) successfully finished
+2024-04-05 09:42:39,657 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000094.jpg) successfully finished
+2024-04-05 09:43:08,654 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000095.jpg) successfully finished
+2024-04-05 09:43:36,755 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000096.jpg) successfully finished
+2024-04-05 09:44:05,262 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000097.jpg) successfully finished
+2024-04-05 09:44:40,743 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000098.jpg) successfully finished
+2024-04-05 09:45:16,164 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000099.jpg) successfully finished
+2024-04-05 09:45:51,615 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000100.jpg) successfully finished
+2024-04-05 09:46:22,138 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000101.jpg) successfully finished
+2024-04-05 09:46:48,789 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000102.jpg) successfully finished
+2024-04-05 09:47:12,918 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000103.jpg) successfully finished
+2024-04-05 09:47:41,144 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000104.jpg) successfully finished
+2024-04-05 09:48:10,395 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000105.jpg) successfully finished
+2024-04-05 09:48:39,586 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000106.jpg) successfully finished
+2024-04-05 09:49:08,696 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000107.jpg) successfully finished
+2024-04-05 09:49:36,389 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000108.jpg) successfully finished
+2024-04-05 09:50:04,030 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000109.jpg) successfully finished
+2024-04-05 09:50:32,349 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000110.jpg) successfully finished
+2024-04-05 09:50:58,123 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000111.jpg) successfully finished
+2024-04-05 09:51:25,462 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000112.jpg) successfully finished
+2024-04-05 09:51:52,092 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000113.jpg) successfully finished
+2024-04-05 09:52:17,939 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000114.jpg) successfully finished
+2024-04-05 09:52:44,890 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000115.jpg) successfully finished
+2024-04-05 09:53:10,150 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000116.jpg) successfully finished
+2024-04-05 09:53:38,254 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000117.jpg) successfully finished
+2024-04-05 09:54:01,945 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000118.jpg) successfully finished
+2024-04-05 09:54:25,100 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000119.jpg) successfully finished
+2024-04-05 09:54:48,272 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000120.jpg) successfully finished
+2024-04-05 09:55:11,061 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000121.jpg) successfully finished
+2024-04-05 09:55:33,872 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000122.jpg) successfully finished
+2024-04-05 09:55:56,911 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 6.94ms
+2024-04-05 09:55:56,915 [websockets.py:open()] - Websocket Opened: ID: 281472913790720, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 09:55:57,260 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000123.jpg) successfully finished
+2024-04-05 09:55:57,424 [websockets.py:_handle_identify()] - Websocket 281472913790720 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 09:56:20,446 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000124.jpg) successfully finished
+2024-04-05 09:56:43,760 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000125.jpg) successfully finished
+2024-04-05 09:57:07,082 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000126.jpg) successfully finished
+2024-04-05 09:57:30,449 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000127.jpg) successfully finished
+2024-04-05 09:57:36,987 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913790720
+2024-04-05 09:57:41,919 [websockets.py:on_close()] - Websocket Closed: ID: 281472913790720 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.84
+2024-04-05 09:57:53,810 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000128.jpg) successfully finished
+2024-04-05 09:58:17,736 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000129.jpg) successfully finished
+2024-04-05 09:58:40,747 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000130.jpg) successfully finished
+2024-04-05 09:59:04,309 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000131.jpg) successfully finished
+2024-04-05 09:59:27,258 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000132.jpg) successfully finished
+2024-04-05 09:59:50,199 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000133.jpg) successfully finished
+2024-04-05 10:00:13,221 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000134.jpg) successfully finished
+2024-04-05 10:00:39,762 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000135.jpg) successfully finished
+2024-04-05 10:01:05,758 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000136.jpg) successfully finished
+2024-04-05 10:01:31,735 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000137.jpg) successfully finished
+2024-04-05 10:01:57,547 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000138.jpg) successfully finished
+2024-04-05 10:02:19,581 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000139.jpg) successfully finished
+2024-04-05 10:02:42,030 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000140.jpg) successfully finished
+2024-04-05 10:03:04,904 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000141.jpg) successfully finished
+2024-04-05 10:03:27,810 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000142.jpg) successfully finished
+2024-04-05 10:03:50,249 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000143.jpg) successfully finished
+2024-04-05 10:04:12,666 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000144.jpg) successfully finished
+2024-04-05 10:04:34,065 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000145.jpg) successfully finished
+2024-04-05 10:04:58,198 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000146.jpg) successfully finished
+2024-04-05 10:05:22,916 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000147.jpg) successfully finished
+2024-04-05 10:05:48,311 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000148.jpg) successfully finished
+2024-04-05 10:06:14,097 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000149.jpg) successfully finished
+2024-04-05 10:06:38,331 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000150.jpg) successfully finished
+2024-04-05 10:07:02,793 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000151.jpg) successfully finished
+2024-04-05 10:07:27,279 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000152.jpg) successfully finished
+2024-04-05 10:07:57,950 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000153.jpg) successfully finished
+2024-04-05 10:08:25,151 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000154.jpg) successfully finished
+2024-04-05 10:08:54,652 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000155.jpg) successfully finished
+2024-04-05 10:09:20,398 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000156.jpg) successfully finished
+2024-04-05 10:09:42,508 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000157.jpg) successfully finished
+2024-04-05 10:10:06,024 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000158.jpg) successfully finished
+2024-04-05 10:10:30,574 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000159.jpg) successfully finished
+2024-04-05 10:10:52,869 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000160.jpg) successfully finished
+2024-04-05 10:11:15,998 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000161.jpg) successfully finished
+2024-04-05 10:11:39,311 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000162.jpg) successfully finished
+2024-04-05 10:12:02,390 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000163.jpg) successfully finished
+2024-04-05 10:12:25,417 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000164.jpg) successfully finished
+2024-04-05 10:12:31,493 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 4.94ms
+2024-04-05 10:12:31,494 [websockets.py:open()] - Websocket Opened: ID: 281472913791104, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 10:12:31,731 [websockets.py:_handle_identify()] - Websocket 281472913791104 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 10:12:48,888 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000165.jpg) successfully finished
+2024-04-05 10:13:10,590 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000166.jpg) successfully finished
+2024-04-05 10:13:31,756 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000167.jpg) successfully finished
+2024-04-05 10:13:53,391 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000168.jpg) successfully finished
+2024-04-05 10:14:15,050 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000169.jpg) successfully finished
+2024-04-05 10:14:36,757 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000170.jpg) successfully finished
+2024-04-05 10:14:58,035 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000171.jpg) successfully finished
+2024-04-05 10:15:19,987 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000172.jpg) successfully finished
+2024-04-05 10:15:31,605 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913791104
+2024-04-05 10:15:36,496 [websockets.py:on_close()] - Websocket Closed: ID: 281472913791104 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-05 10:15:43,199 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000173.jpg) successfully finished
+2024-04-05 10:16:06,434 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000174.jpg) successfully finished
+2024-04-05 10:16:29,638 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000175.jpg) successfully finished
+2024-04-05 10:16:52,902 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000176.jpg) successfully finished
+2024-04-05 10:17:17,126 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000177.jpg) successfully finished
+2024-04-05 10:17:39,077 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000178.jpg) successfully finished
+2024-04-05 10:18:00,935 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000179.jpg) successfully finished
+2024-04-05 10:18:20,532 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 5.43ms
+2024-04-05 10:18:20,534 [websockets.py:open()] - Websocket Opened: ID: 281472913792736, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-05 10:18:20,901 [websockets.py:_handle_identify()] - Websocket 281472913792736 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-05 10:18:22,131 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000180.jpg) successfully finished
+2024-04-05 10:18:44,659 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000181.jpg) successfully finished
+2024-04-05 10:19:07,476 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000182.jpg) successfully finished
+2024-04-05 10:19:32,527 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000183.jpg) successfully finished
+2024-04-05 10:19:57,066 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000184.jpg) successfully finished
+2024-04-05 10:20:22,049 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000185.jpg) successfully finished
+2024-04-05 10:20:47,629 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000186.jpg) successfully finished
+2024-04-05 10:21:11,503 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000187.jpg) successfully finished
+2024-04-05 10:21:30,671 [websockets.py:write_to_socket()] - Websocket closed while writing: 281472913792736
+2024-04-05 10:21:34,449 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000188.jpg) successfully finished
+2024-04-05 10:21:35,539 [websockets.py:on_close()] - Websocket Closed: ID: 281472913792736 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-04-05 10:21:57,855 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000189.jpg) successfully finished
+2024-04-05 10:22:19,953 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000190.jpg) successfully finished
+2024-04-05 10:22:41,453 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000191.jpg) successfully finished
+2024-04-05 10:23:03,398 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000192.jpg) successfully finished
+2024-04-05 10:23:25,352 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000193.jpg) successfully finished
+2024-04-05 10:23:47,316 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000194.jpg) successfully finished
+2024-04-05 10:24:09,430 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000195.jpg) successfully finished
+2024-04-05 10:24:32,089 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000196.jpg) successfully finished
+2024-04-05 10:25:19,104 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+-------------------- Log Start | Fri Apr  5 16:17:15 2024 --------------------
+platform: Linux-5.16.17-sun50iw9-aarch64-with-glibc2.31
+data_path: /home/biqu/printer_data
+is_default_data_path: False
+config_file: /home/biqu/printer_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 21cb7523e0cc4b8dbb17e10e766e35f4
+unix_socket_path: /home/biqu/printer_data/comms/moonraker.sock
+software_version: v0.8.0-325-g99b97af
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/biqu/printer_data/logs/moonraker.log
+python_version: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+launch_args: /home/biqu/moonraker-env/bin/python /home/biqu/moonraker/moonraker/moonraker.py -d /home/biqu/printer_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-04-05 10:17:15,401 [confighelper.py:read_file()] - Configuration File '/home/biqu/printer_data/config/moonraker.conf' parsed, total size: 2795 B
+2024-04-05 10:17:15,405 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7125
+klippy_uds_address = /home/biqu/printer_data/comms/klippy.sock
+
+[file_manager]
+enable_object_processing = True
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[timelapse]
+
+[announcements]
+subscriptions = 
+	mainsail
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager mainsail]
+type = web
+channel = stable
+repo = mainsail-crew/mainsail
+path = ~/mainsail
+
+[update_manager crowsnest]
+type = git_repo
+path = ~/crowsnest
+origin = https://github.com/mainsail-crew/crowsnest.git
+managed_services = crowsnest
+install_script = tools/pkglist.sh
+
+[update_manager sonar]
+type = git_repo
+path = ~/sonar
+origin = https://github.com/mainsail-crew/sonar.git
+primary_branch = main
+managed_services = sonar
+install_script = tools/install.sh
+
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
+
+[update_manager print_area_bed_mesh]
+type = git_repo
+path = ~/print_area_bed_mesh
+origin = https://github.com/Turge08/print_area_bed_mesh.git
+is_system_service = False
+
+[update_manager KlipperScreen]
+type = git_repo
+path = ~/KlipperScreen
+origin = https://github.com/jordanruthe/KlipperScreen.git
+virtualenv = ~/.KlipperScreen-env
+requirements = scripts/KlipperScreen-requirements.txt
+system_dependencies = scripts/system-dependencies.json
+managed_services = KlipperScreen
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
+[update_manager led_effect]
+type = git_repo
+path = ~/klipper-led_effect
+origin = https://github.com/julianschill/klipper-led_effect.git
+is_system_service = False
+
+[update_manager client moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
+[power relay]
+type = klipper_device
+object_name = output_pin relay
+
+#################################################################
+All Configuration Files:
+/home/biqu/printer_data/config/moonraker.conf
+#################################################################
+2024-04-05 10:17:17,033 [server.py:load_component()] - Component (secrets) loaded
+2024-04-05 10:17:17,056 [server.py:load_component()] - Component (template) loaded
+2024-04-05 10:17:17,077 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-04-05 10:17:20,914 [server.py:load_component()] - Component (application) loaded
+2024-04-05 10:17:21,060 [server.py:load_component()] - Component (websockets) loaded
+2024-04-05 10:17:21,753 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-04-05 10:17:21,916 [server.py:add_log_rollover_item()] - 
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 21
+2024-04-05 10:17:22,031 [server.py:load_component()] - Component (database) loaded
+2024-04-05 10:17:22,173 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-04-05 10:17:22,366 [server.py:load_component()] - Component (file_manager) loaded
+2024-04-05 10:17:22,577 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-04-05 10:17:22,598 [server.py:load_component()] - Component (authorization) loaded
+2024-04-05 10:17:22,622 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-04-05 10:17:23,854 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 9, 2, 'final', 0)
+  version_string: 3.9.2 (default, Feb 28 2021, 17:03:44)  [GCC 10.2.1 20210110]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: 
+  hardware_desc: 
+  model: 
+  total_memory: 1010636
+  memory_units: kB
+
+***sd_info***
+
+***distribution***
+  name: BTT-CB1 2.3.4 Bullseye
+  id: debian
+  version: 11
+  version_parts: {'major': '11', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bullseye
+  release_info: {}
+  kernel_version: 5.16.17-sun50iw9
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+2024-04-05 10:17:23,895 [server.py:load_component()] - Component (shell_command) loaded
+2024-04-05 10:17:23,900 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-04-05 10:17:23,938 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-04-05 10:17:23,939 [server.py:load_component()] - Component (machine) loaded
+2024-04-05 10:17:23,967 [server.py:load_component()] - Component (data_store) loaded
+2024-04-05 10:17:23,989 [proc_stats.py:__init__()] - Unable to find 'vcgencmd', throttle checking disabled
+2024-04-05 10:17:23,996 [server.py:load_component()] - Component (proc_stats) loaded
+2024-04-05 10:17:24,030 [server.py:load_component()] - Component (job_state) loaded
+2024-04-05 10:17:24,062 [server.py:load_component()] - Component (job_queue) loaded
+2024-04-05 10:17:24,170 [server.py:load_component()] - Component (http_client) loaded
+2024-04-05 10:17:24,210 [server.py:load_component()] - Component (announcements) loaded
+2024-04-05 10:17:24,232 [server.py:load_component()] - Component (webcam) loaded
+2024-04-05 10:17:24,255 [server.py:load_component()] - Component (extensions) loaded
+2024-04-05 10:17:24,284 [server.py:load_component()] - Component (history) loaded
+2024-04-05 10:17:24,319 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-04-05 10:17:24,454 [server.py:load_component()] - Component (timelapse) loaded
+2024-04-05 10:17:24,479 [power.py:__init__()] - Power component loading devices: ['power relay']
+2024-04-05 10:17:24,507 [server.py:load_component()] - Component (power) loaded
+2024-04-05 10:17:25,020 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/biqu/moonraker-env
+2024-04-05 10:17:25,054 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/biqu/klippy-env
+2024-04-05 10:17:25,217 [base_deploy.py:log_info()] - Git Repo KlipperScreen: Detected virtualenv: /home/biqu/.KlipperScreen-env
+2024-04-05 10:17:25,250 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Option 'env' is deprecated, use 'virtualenv' instead.
+2024-04-05 10:17:25,267 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Detected virtualenv: /home/biqu/moonraker-telegram-bot-env
+2024-04-05 10:17:25,314 [server.py:load_component()] - Component (update_manager) loaded
+2024-04-05 10:17:25,333 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-04-05 10:17:25,582 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-04-05 10:17:26,480 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-04-05 10:17:26,481 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-04-05 10:17:26,487 [machine.py:validation_init()] - Installation version in database up to date
+2024-04-05 10:17:27,748 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-04-05 10:17:27,785 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.184
+2024-04-05 10:17:27,792 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.184
+2024-04-05 10:17:27,947 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker.service:
+unit_name: moonraker.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', 'network-online.target', '-.mount']
+**After=['network-online.target', 'sysinit.target', 'systemd-journald.socket', '-.mount', 'basic.target', 'system.slice']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/biqu/printer_data/systemd/moonraker.env
+**ExecStart=/home/biqu/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/biqu/moonraker
+**FragmentPath=/etc/systemd/system/moonraker.service
+**Description=API Server for Klipper SV1
+**User=biqu
+2024-04-05 10:17:27,948 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-04-05 10:17:27,948 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-04-05 10:17:27,953 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-04-05 10:17:27,954 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.184
+2024-04-05 10:17:27,956 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-04-05 10:17:27,958 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['systemd-journald.socket', 'sysinit.target', '-.mount', 'klipper-mcu.service', 'system.slice', 'network-online.target', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/biqu/printer_data/systemd/klipper.env
+**ExecStart=/home/biqu/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/biqu/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=biqu
+2024-04-05 10:17:27,958 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-04-05 10:17:27,963 [server.py:_initialize_component()] - Performing Component Post Init: [timelapse]
+2024-04-05 10:17:27,964 [timelapse.py:parseWebcamConfig()] - snapshoturl: http://localhost/webcam/?action=snapshot, Flip V/H: False/False, rotation: 0
+2024-04-05 10:17:27,965 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2024-04-05 10:17:27,966 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
