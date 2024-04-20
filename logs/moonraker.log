@@ -818,3 +818,742 @@ Properties:
 2024-04-20 02:58:22,504 [timelapse.py:parseWebcamConfig()] - snapshoturl: http://localhost/webcam/?action=snapshot, Flip V/H: False/False, rotation: 0
 2024-04-20 02:58:22,505 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
 2024-04-20 02:58:22,509 [server.py:_initialize_component()] - Performing Component Post Init: [power]
+2024-04-20 02:58:24,383 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-04-20 02:58:24,391 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/biqu/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 99b97afc7de1ed16ddc7db29ab6354bd6ea3dfb7
+Upstream Commit SHA: 99b97afc7de1ed16ddc7db29ab6354bd6ea3dfb7
+Current Version: v0.8.0-325-g99b97afc
+Upstream Version: v0.8.0-325-g99b97afc
+Rollback Commit: a3e4dac5fb20f8dfc0857a252eef5219d5e0ec4c
+Rollback Branch: master
+Rollback Version: v0.8.0-324-ga3e4dac5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['moonraker/components/timelapse.py']
+2024-04-20 02:58:24,407 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/biqu/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 2425a74638baa87efef3ca02253804d126101c8a
+Upstream Commit SHA: 2425a74638baa87efef3ca02253804d126101c8a
+Current Version: v0.12.0-159-g2425a746
+Upstream Version: v0.12.0-159-g2425a746
+Rollback Commit: 75a40e817db4d5bc9d7d893fad499907d2b910a2
+Rollback Branch: master
+Rollback Version: v0.12.0-139-g75a40e81
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/led_effect.py']
+2024-04-20 02:58:24,411 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/biqu/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Rollback Branch: master
+Rollback Version: v1.2.1-0-ge57810d5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,439 [base_deploy.py:log_info()] - Web Client mainsail: Detected
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/biqu/mainsail
+Local Version: v2.10.0
+Remote Version: v2.10.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.10.0/mainsail.zip
+Download Size: 2081565
+Content Type: application/zip
+Rollback Version: v2.10.0
+Rollback Repo: mainsail-crew/mainsail
+2024-04-20 02:58:24,443 [git_deploy.py:log_repo_info()] - Git Repo crowsnest Detected:
+Owner: mainsail-crew
+Repository Name: crowsnest
+Path: /home/biqu/crowsnest
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/crowsnest.git
+Recovery URL: https://github.com/mainsail-crew/crowsnest.git
+Current Commit SHA: 6ac4711e17f6f7c51998d1f928166fdaee383bf7
+Upstream Commit SHA: 6ac4711e17f6f7c51998d1f928166fdaee383bf7
+Current Version: v4.1.8-1-g6ac4711e
+Upstream Version: v4.1.8-1-g6ac4711e
+Rollback Commit: e96cd46ffb4a42ae1fbf23118caa68dd0dac0597
+Rollback Branch: master
+Rollback Version: v4.1.6-1-ge96cd46f
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,447 [git_deploy.py:log_repo_info()] - Git Repo sonar Detected:
+Owner: mainsail-crew
+Repository Name: sonar
+Path: /home/biqu/sonar
+Remote: origin
+Branch: main
+Remote URL: https://github.com/mainsail-crew/sonar.git
+Recovery URL: https://github.com/mainsail-crew/sonar.git
+Current Commit SHA: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Upstream Commit SHA: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Current Version: v0.1.3-1-geacc498a
+Upstream Version: v0.1.3-1-geacc498a
+Rollback Commit: eacc498a52f79292063b6f9b0e0c191c34c5dc09
+Rollback Branch: main
+Rollback Version: v0.1.3-1-geacc498a
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,451 [git_deploy.py:log_repo_info()] - Git Repo timelapse Detected:
+Owner: mainsail-crew
+Repository Name: moonraker-timelapse
+Path: /home/biqu/moonraker-timelapse
+Remote: origin
+Branch: main
+Remote URL: https://github.com/mainsail-crew/moonraker-timelapse.git
+Recovery URL: https://github.com/mainsail-crew/moonraker-timelapse.git
+Current Commit SHA: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Upstream Commit SHA: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Current Version: v0.0.1-143-gc7fff11e
+Upstream Version: v0.0.1-143-gc7fff11e
+Rollback Commit: c7fff11e542b95e0e15b8bb1443cea8159ac0274
+Rollback Branch: main
+Rollback Version: v0.0.1-143-gc7fff11e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,454 [git_deploy.py:log_repo_info()] - Git Repo print_area_bed_mesh Detected:
+Owner: Turge08
+Repository Name: print_area_bed_mesh
+Path: /home/biqu/print_area_bed_mesh
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Turge08/print_area_bed_mesh.git
+Recovery URL: https://github.com/Turge08/print_area_bed_mesh.git
+Current Commit SHA: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Upstream Commit SHA: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Current Version: v1.2.1-21-g53451c9d
+Upstream Version: v1.2.1-21-g53451c9d
+Rollback Commit: 53451c9dedd331c2ead0fbd0f55ee15c37d41b1f
+Rollback Branch: master
+Rollback Version: v1.2.1-21-g53451c9d
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,458 [git_deploy.py:log_repo_info()] - Git Repo KlipperScreen Detected:
+Owner: jordanruthe
+Repository Name: KlipperScreen
+Path: /home/biqu/KlipperScreen
+Remote: origin
+Branch: master
+Remote URL: https://github.com/jordanruthe/KlipperScreen.git
+Recovery URL: https://github.com/jordanruthe/KlipperScreen.git
+Current Commit SHA: d23ca4557a00680ac02bb1890617a1640f0d90da
+Upstream Commit SHA: d23ca4557a00680ac02bb1890617a1640f0d90da
+Current Version: v0.4.0-5-gd23ca455
+Upstream Version: v0.4.0-5-gd23ca455
+Rollback Commit: e34205a9cfb06a32effaa287360907151e6e0579
+Rollback Branch: master
+Rollback Version: v0.3.9-81-ge34205a9
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,497 [git_deploy.py:log_repo_info()] - Git Repo Klipper-Adaptive-Meshing-Purging Detected:
+Owner: kyleisah
+Repository Name: Klipper-Adaptive-Meshing-Purging
+Path: /home/biqu/Klipper-Adaptive-Meshing-Purging
+Remote: origin
+Branch: main
+Remote URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Recovery URL: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+Current Commit SHA: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Upstream Commit SHA: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Current Version: v1.1.2-12-gd657271f
+Upstream Version: v1.1.2-12-gd657271f
+Rollback Commit: d657271f13fc429b5ca36a4f8956b67c9ddf0558
+Rollback Branch: main
+Rollback Version: v1.1.2-12-gd657271f
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,510 [git_deploy.py:log_repo_info()] - Git Repo led_effect Detected:
+Owner: julianschill
+Repository Name: klipper-led_effect
+Path: /home/biqu/klipper-led_effect
+Remote: origin
+Branch: master
+Remote URL: https://github.com/julianschill/klipper-led_effect.git
+Recovery URL: https://github.com/julianschill/klipper-led_effect.git
+Current Commit SHA: c735fe52e1070632919f125513a0552e03739a5f
+Upstream Commit SHA: c735fe52e1070632919f125513a0552e03739a5f
+Current Version: v0.0.10-1-gc735fe52
+Upstream Version: v0.0.10-1-gc735fe52
+Rollback Commit: c735fe52e1070632919f125513a0552e03739a5f
+Rollback Branch: master
+Rollback Version: v0.0.10-1-gc735fe52
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,526 [git_deploy.py:log_repo_info()] - Git Repo moonraker-telegram-bot Detected:
+Owner: nlef
+Repository Name: moonraker-telegram-bot
+Path: /home/biqu/moonraker-telegram-bot
+Remote: origin
+Branch: master
+Remote URL: https://github.com/nlef/moonraker-telegram-bot.git
+Recovery URL: https://github.com/nlef/moonraker-telegram-bot.git
+Current Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Upstream Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Current Version: v1.5-0-gb9b47003
+Upstream Version: v1.5-0-gb9b47003
+Rollback Commit: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Rollback Branch: master
+Rollback Version: v1.5-0-gb9b47003
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2024-04-20 02:58:24,527 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 4 Days, 23 Hours, 39 Minutes, 27 Seconds
+2024-04-20 02:58:24,527 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 32 Seconds
+2024-04-20 02:58:24,528 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 6 Days, 23 Hours, 57 Minutes, 51 Seconds
+2024-04-20 02:58:24,528 [base_deploy.py:log_info()] - Git Repo mainsail-config: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 38 Seconds
+2024-04-20 02:58:24,528 [base_deploy.py:log_info()] - Web Client mainsail: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 38 Seconds
+2024-04-20 02:58:24,529 [base_deploy.py:log_info()] - Git Repo crowsnest: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 39 Seconds
+2024-04-20 02:58:24,529 [base_deploy.py:log_info()] - Git Repo sonar: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 40 Seconds
+2024-04-20 02:58:24,529 [base_deploy.py:log_info()] - Git Repo timelapse: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 41 Seconds
+2024-04-20 02:58:24,530 [base_deploy.py:log_info()] - Git Repo print_area_bed_mesh: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 42 Seconds
+2024-04-20 02:58:24,530 [base_deploy.py:log_info()] - Git Repo KlipperScreen: Next refresh in: 4 Days, 23 Hours, 39 Minutes, 51 Seconds
+2024-04-20 02:58:24,530 [base_deploy.py:log_info()] - Git Repo Klipper-Adaptive-Meshing-Purging: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 47 Seconds
+2024-04-20 02:58:24,531 [base_deploy.py:log_info()] - Git Repo led_effect: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 48 Seconds
+2024-04-20 02:58:24,531 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Next refresh in: 4 Days, 23 Hours, 38 Minutes, 49 Seconds
+2024-04-20 02:58:24,549 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/biqu/printer_data/comms/moonraker.sock'
+2024-04-20 02:58:24,551 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7125), Hostname: BTT-Pi
+2024-04-20 02:58:24,556 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-04-20 02:58:24,810 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-04-20 02:58:24,989 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper.service:
+unit_name: klipper.service
+is_default: True
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount']
+**After=['-.mount', 'klipper-mcu.service', 'network-online.target', 'system.slice', 'sysinit.target', 'systemd-journald.socket', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/biqu/printer_data/systemd/klipper.env
+**ExecStart=/home/biqu/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/biqu/klipper
+**FragmentPath=/etc/systemd/system/klipper.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=biqu
+2024-04-20 02:58:25,493 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-04-20 02:58:25,573 [application.py:log_request()] - 101 GET /websocket?token=RGNJCA74VW7CFDPAGSMBFFUKGMEBBWSX (127.0.0.1) [_TRUSTED_USER_] 22.46ms
+2024-04-20 02:58:25,574 [websockets.py:open()] - Websocket Opened: ID: 281473105901408, Proxied: False, User Agent: , Host Name: 127.0.0.1
+2024-04-20 02:58:25,784 [application.py:log_request()] - 404 GET /printer/info (127.0.0.1) [_TRUSTED_USER_] 54.06ms
+2024-04-20 02:58:25,928 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-159-g2425a746-dirty
+2024-04-20 02:58:29,096 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-04-20 02:58:29,106 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-04-20 02:58:29,347 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-04-20 02:58:29,717 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-04-20 02:58:29,772 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2024-04-20 02:58:30,113 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'extruder']
+2024-04-20 02:58:36,515 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.138
+2024-04-20 02:58:36,520 [application.py:log_request()] - 101 GET /websocket (192.168.0.138) [_TRUSTED_USER_] 6.91ms
+2024-04-20 02:58:36,521 [websockets.py:open()] - Websocket Opened: ID: 281473105944240, Proxied: True, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15, Host Name: 192.168.0.184
+2024-04-20 02:58:36,591 [websockets.py:_handle_identify()] - Websocket 281473105944240 Client Identified - Name: mainsail, Version: 2.10.0, Type: web
+2024-04-20 02:58:46,873 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 4.26ms
+2024-04-20 02:58:46,875 [websockets.py:open()] - Websocket Opened: ID: 281473105941552, Proxied: True, User Agent: , Host Name: localhost
+2024-04-20 02:58:47,164 [job_state.py:_status_update()] - Job Started: Stackable_plant_support_80%.gcode
+2024-04-20 02:59:35,646 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffff919ae700>, <Task finished name='Task-209' coro=<_HTTPConnection.run() done, defined at /home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py:290> exception=SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1123)')>)
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/iostream.py", line 1367, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1123)
+2024-04-20 02:59:46,587 [websockets.py:write_to_socket()] - Websocket closed while writing: 281473105944240
+2024-04-20 02:59:51,526 [websockets.py:on_close()] - Websocket Closed: ID: 281473105944240 Close Code: None, Close Reason: None, Pong Time Elapsed: 34.66
+2024-04-20 03:03:17,697 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000001.jpg) successfully finished
+2024-04-20 03:07:53,246 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000002.jpg) successfully finished
+2024-04-20 03:11:17,916 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000003.jpg) successfully finished
+2024-04-20 03:13:59,006 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000004.jpg) successfully finished
+2024-04-20 03:16:50,236 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000005.jpg) successfully finished
+2024-04-20 03:18:57,262 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000006.jpg) successfully finished
+2024-04-20 03:20:20,859 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000007.jpg) successfully finished
+2024-04-20 03:21:44,434 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000008.jpg) successfully finished
+2024-04-20 03:23:10,378 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000009.jpg) successfully finished
+2024-04-20 03:24:38,558 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000010.jpg) successfully finished
+2024-04-20 03:26:05,671 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000011.jpg) successfully finished
+2024-04-20 03:27:31,296 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000012.jpg) successfully finished
+2024-04-20 03:28:56,262 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000013.jpg) successfully finished
+2024-04-20 03:29:34,126 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffff9070af70>, <Task finished name='Task-81672' coro=<_HTTPConnection.run() done, defined at /home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py:290> exception=SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1123)')>)
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/iostream.py", line 1367, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1123)
+2024-04-20 03:30:24,113 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000014.jpg) successfully finished
+2024-04-20 03:31:52,905 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000015.jpg) successfully finished
+2024-04-20 03:33:20,296 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000016.jpg) successfully finished
+2024-04-20 03:34:43,162 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000017.jpg) successfully finished
+2024-04-20 03:36:05,396 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000018.jpg) successfully finished
+2024-04-20 03:37:28,049 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000019.jpg) successfully finished
+2024-04-20 03:38:50,078 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000020.jpg) successfully finished
+2024-04-20 03:40:15,359 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000021.jpg) successfully finished
+2024-04-20 03:41:42,694 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000022.jpg) successfully finished
+2024-04-20 03:43:49,537 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000023.jpg) successfully finished
+2024-04-20 03:45:57,129 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000024.jpg) successfully finished
+2024-04-20 03:48:03,051 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000025.jpg) successfully finished
+2024-04-20 03:50:11,702 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000026.jpg) successfully finished
+2024-04-20 03:52:15,429 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000027.jpg) successfully finished
+2024-04-20 03:52:39,301 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000028.jpg) successfully finished
+2024-04-20 03:53:01,980 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000029.jpg) successfully finished
+2024-04-20 03:53:23,606 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000030.jpg) successfully finished
+2024-04-20 03:53:47,841 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000031.jpg) successfully finished
+2024-04-20 03:54:11,837 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000032.jpg) successfully finished
+2024-04-20 03:54:35,632 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000033.jpg) successfully finished
+2024-04-20 03:54:58,105 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000034.jpg) successfully finished
+2024-04-20 03:55:19,661 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000035.jpg) successfully finished
+2024-04-20 03:55:38,799 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000036.jpg) successfully finished
+2024-04-20 03:55:58,519 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000037.jpg) successfully finished
+2024-04-20 03:56:18,633 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000038.jpg) successfully finished
+2024-04-20 03:56:37,265 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000039.jpg) successfully finished
+2024-04-20 03:56:57,050 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000040.jpg) successfully finished
+2024-04-20 03:57:11,119 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000041.jpg) successfully finished
+2024-04-20 03:57:24,623 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000042.jpg) successfully finished
+2024-04-20 03:57:38,015 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000043.jpg) successfully finished
+2024-04-20 03:57:51,747 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000044.jpg) successfully finished
+2024-04-20 03:58:03,621 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000045.jpg) successfully finished
+2024-04-20 03:58:11,467 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000046.jpg) successfully finished
+2024-04-20 03:58:18,608 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000047.jpg) successfully finished
+2024-04-20 03:58:25,178 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000048.jpg) successfully finished
+2024-04-20 03:58:31,704 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000049.jpg) successfully finished
+2024-04-20 03:58:38,250 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000050.jpg) successfully finished
+2024-04-20 03:58:44,801 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000051.jpg) successfully finished
+2024-04-20 03:58:51,347 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000052.jpg) successfully finished
+2024-04-20 03:58:57,895 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000053.jpg) successfully finished
+2024-04-20 03:59:04,442 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000054.jpg) successfully finished
+2024-04-20 03:59:10,991 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000055.jpg) successfully finished
+2024-04-20 03:59:17,545 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000056.jpg) successfully finished
+2024-04-20 03:59:24,124 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000057.jpg) successfully finished
+2024-04-20 03:59:30,644 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000058.jpg) successfully finished
+2024-04-20 03:59:37,184 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000059.jpg) successfully finished
+2024-04-20 03:59:43,732 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000060.jpg) successfully finished
+2024-04-20 03:59:50,301 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000061.jpg) successfully finished
+2024-04-20 03:59:56,828 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000062.jpg) successfully finished
+2024-04-20 04:00:03,402 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000063.jpg) successfully finished
+2024-04-20 04:00:09,924 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000064.jpg) successfully finished
+2024-04-20 04:00:16,478 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000065.jpg) successfully finished
+2024-04-20 04:00:23,024 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000066.jpg) successfully finished
+2024-04-20 04:00:29,575 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000067.jpg) successfully finished
+2024-04-20 04:00:36,128 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000068.jpg) successfully finished
+2024-04-20 04:00:42,670 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000069.jpg) successfully finished
+2024-04-20 04:00:49,229 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000070.jpg) successfully finished
+2024-04-20 04:00:55,763 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000071.jpg) successfully finished
+2024-04-20 04:01:02,312 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000072.jpg) successfully finished
+2024-04-20 04:01:08,859 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000073.jpg) successfully finished
+2024-04-20 04:01:15,412 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000074.jpg) successfully finished
+2024-04-20 04:01:21,950 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000075.jpg) successfully finished
+2024-04-20 04:01:28,501 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000076.jpg) successfully finished
+2024-04-20 04:01:35,047 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000077.jpg) successfully finished
+2024-04-20 04:01:41,593 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000078.jpg) successfully finished
+2024-04-20 04:01:48,139 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000079.jpg) successfully finished
+2024-04-20 04:01:54,689 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000080.jpg) successfully finished
+2024-04-20 04:02:01,239 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000081.jpg) successfully finished
+2024-04-20 04:02:07,777 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000082.jpg) successfully finished
+2024-04-20 04:02:14,325 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000083.jpg) successfully finished
+2024-04-20 04:02:20,871 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000084.jpg) successfully finished
+2024-04-20 04:02:30,944 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000085.jpg) successfully finished
+2024-04-20 04:02:41,564 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000086.jpg) successfully finished
+2024-04-20 04:02:51,643 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000087.jpg) successfully finished
+2024-04-20 04:03:01,823 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000088.jpg) successfully finished
+2024-04-20 04:03:11,875 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000089.jpg) successfully finished
+2024-04-20 04:03:20,860 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000090.jpg) successfully finished
+2024-04-20 04:03:29,274 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000091.jpg) successfully finished
+2024-04-20 04:03:31,419 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-04-20 04:03:31,420 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.138
+2024-04-20 04:03:37,695 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000092.jpg) successfully finished
+2024-04-20 04:03:46,169 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000093.jpg) successfully finished
+2024-04-20 04:03:54,760 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000094.jpg) successfully finished
+2024-04-20 04:04:02,824 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000095.jpg) successfully finished
+2024-04-20 04:04:10,337 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000096.jpg) successfully finished
+2024-04-20 04:04:17,849 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000097.jpg) successfully finished
+2024-04-20 04:04:25,349 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000098.jpg) successfully finished
+2024-04-20 04:04:33,926 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000099.jpg) successfully finished
+2024-04-20 04:04:43,077 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000100.jpg) successfully finished
+2024-04-20 04:04:52,150 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000101.jpg) successfully finished
+2024-04-20 04:05:01,211 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000102.jpg) successfully finished
+2024-04-20 04:05:10,223 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000103.jpg) successfully finished
+2024-04-20 04:05:18,614 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000104.jpg) successfully finished
+2024-04-20 04:05:27,052 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000105.jpg) successfully finished
+2024-04-20 04:05:35,210 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000106.jpg) successfully finished
+2024-04-20 04:05:42,852 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000107.jpg) successfully finished
+2024-04-20 04:05:50,888 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000108.jpg) successfully finished
+2024-04-20 04:05:58,395 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000109.jpg) successfully finished
+2024-04-20 04:06:05,904 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000110.jpg) successfully finished
+2024-04-20 04:06:14,011 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000111.jpg) successfully finished
+2024-04-20 04:06:22,284 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000112.jpg) successfully finished
+2024-04-20 04:06:31,334 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000113.jpg) successfully finished
+2024-04-20 04:06:40,328 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000114.jpg) successfully finished
+2024-04-20 04:06:48,313 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000115.jpg) successfully finished
+2024-04-20 04:06:56,690 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000116.jpg) successfully finished
+2024-04-20 04:07:05,167 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000117.jpg) successfully finished
+2024-04-20 04:07:13,759 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000118.jpg) successfully finished
+2024-04-20 04:07:21,373 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000119.jpg) successfully finished
+2024-04-20 04:07:28,878 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000120.jpg) successfully finished
+2024-04-20 04:07:36,371 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000121.jpg) successfully finished
+2024-04-20 04:07:43,872 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000122.jpg) successfully finished
+2024-04-20 04:07:51,853 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000123.jpg) successfully finished
+2024-04-20 04:08:00,552 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000124.jpg) successfully finished
+2024-04-20 04:08:09,636 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000125.jpg) successfully finished
+2024-04-20 04:08:18,626 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000126.jpg) successfully finished
+2024-04-20 04:08:27,604 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000127.jpg) successfully finished
+2024-04-20 04:08:36,037 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000128.jpg) successfully finished
+2024-04-20 04:08:44,473 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000129.jpg) successfully finished
+2024-04-20 04:08:52,638 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000130.jpg) successfully finished
+2024-04-20 04:09:00,722 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000131.jpg) successfully finished
+2024-04-20 04:09:08,763 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000132.jpg) successfully finished
+2024-04-20 04:09:16,264 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000133.jpg) successfully finished
+2024-04-20 04:09:23,767 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000134.jpg) successfully finished
+2024-04-20 04:09:31,862 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000135.jpg) successfully finished
+2024-04-20 04:09:40,141 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000136.jpg) successfully finished
+2024-04-20 04:09:49,237 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000137.jpg) successfully finished
+2024-04-20 04:09:57,739 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000138.jpg) successfully finished
+2024-04-20 04:10:05,701 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000139.jpg) successfully finished
+2024-04-20 04:10:14,150 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000140.jpg) successfully finished
+2024-04-20 04:10:22,592 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000141.jpg) successfully finished
+2024-04-20 04:10:31,222 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000142.jpg) successfully finished
+2024-04-20 04:10:39,758 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000143.jpg) successfully finished
+2024-04-20 04:10:47,768 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000144.jpg) successfully finished
+2024-04-20 04:10:55,681 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000145.jpg) successfully finished
+2024-04-20 04:11:03,636 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000146.jpg) successfully finished
+2024-04-20 04:11:11,617 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000147.jpg) successfully finished
+2024-04-20 04:11:20,337 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000148.jpg) successfully finished
+2024-04-20 04:11:29,400 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000149.jpg) successfully finished
+2024-04-20 04:11:38,402 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000150.jpg) successfully finished
+2024-04-20 04:11:47,330 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000151.jpg) successfully finished
+2024-04-20 04:11:55,779 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000152.jpg) successfully finished
+2024-04-20 04:12:04,222 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000153.jpg) successfully finished
+2024-04-20 04:12:12,371 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000154.jpg) successfully finished
+2024-04-20 04:12:20,460 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000155.jpg) successfully finished
+2024-04-20 04:12:28,495 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000156.jpg) successfully finished
+2024-04-20 04:12:35,962 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000157.jpg) successfully finished
+2024-04-20 04:12:43,493 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000158.jpg) successfully finished
+2024-04-20 04:12:51,548 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000159.jpg) successfully finished
+2024-04-20 04:13:00,276 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000160.jpg) successfully finished
+2024-04-20 04:13:09,342 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000161.jpg) successfully finished
+2024-04-20 04:13:17,914 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000162.jpg) successfully finished
+2024-04-20 04:13:26,318 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000163.jpg) successfully finished
+2024-04-20 04:13:34,730 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000164.jpg) successfully finished
+2024-04-20 04:13:43,149 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000165.jpg) successfully finished
+2024-04-20 04:13:51,310 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000166.jpg) successfully finished
+2024-04-20 04:13:59,415 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000167.jpg) successfully finished
+2024-04-20 04:14:07,372 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000168.jpg) successfully finished
+2024-04-20 04:14:15,324 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000169.jpg) successfully finished
+2024-04-20 04:14:23,262 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000170.jpg) successfully finished
+2024-04-20 04:14:30,807 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000171.jpg) successfully finished
+2024-04-20 04:14:38,644 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000172.jpg) successfully finished
+2024-04-20 04:14:47,698 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000173.jpg) successfully finished
+2024-04-20 04:14:56,214 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000174.jpg) successfully finished
+2024-04-20 04:15:04,732 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000175.jpg) successfully finished
+2024-04-20 04:15:13,129 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000176.jpg) successfully finished
+2024-04-20 04:15:21,548 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000177.jpg) successfully finished
+2024-04-20 04:15:30,134 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000178.jpg) successfully finished
+2024-04-20 04:15:38,209 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000179.jpg) successfully finished
+2024-04-20 04:15:46,689 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000180.jpg) successfully finished
+2024-04-20 04:15:54,625 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000181.jpg) successfully finished
+2024-04-20 04:16:02,557 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000182.jpg) successfully finished
+2024-04-20 04:16:11,061 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000183.jpg) successfully finished
+2024-04-20 04:16:19,879 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000184.jpg) successfully finished
+2024-04-20 04:16:28,968 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000185.jpg) successfully finished
+2024-04-20 04:16:37,509 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000186.jpg) successfully finished
+2024-04-20 04:16:45,501 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000187.jpg) successfully finished
+2024-04-20 04:16:53,927 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000188.jpg) successfully finished
+2024-04-20 04:17:02,384 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000189.jpg) successfully finished
+2024-04-20 04:17:11,015 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000190.jpg) successfully finished
+2024-04-20 04:17:19,606 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000191.jpg) successfully finished
+2024-04-20 04:17:27,553 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000192.jpg) successfully finished
+2024-04-20 04:17:35,504 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000193.jpg) successfully finished
+2024-04-20 04:17:43,461 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000194.jpg) successfully finished
+2024-04-20 04:17:51,425 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000195.jpg) successfully finished
+2024-04-20 04:18:00,658 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000196.jpg) successfully finished
+2024-04-20 04:18:09,789 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000197.jpg) successfully finished
+2024-04-20 04:18:18,294 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000198.jpg) successfully finished
+2024-04-20 04:18:26,794 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000199.jpg) successfully finished
+2024-04-20 04:18:35,190 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000200.jpg) successfully finished
+2024-04-20 04:18:43,610 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000201.jpg) successfully finished
+2024-04-20 04:18:52,237 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000202.jpg) successfully finished
+2024-04-20 04:19:00,342 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000203.jpg) successfully finished
+2024-04-20 04:19:08,804 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000204.jpg) successfully finished
+2024-04-20 04:19:16,793 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000205.jpg) successfully finished
+2024-04-20 04:19:24,727 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000206.jpg) successfully finished
+2024-04-20 04:19:32,705 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000207.jpg) successfully finished
+2024-04-20 04:19:41,970 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000208.jpg) successfully finished
+2024-04-20 04:19:51,036 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000209.jpg) successfully finished
+2024-04-20 04:19:59,571 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000210.jpg) successfully finished
+2024-04-20 04:20:08,065 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000211.jpg) successfully finished
+2024-04-20 04:20:16,464 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000212.jpg) successfully finished
+2024-04-20 04:20:24,876 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000213.jpg) successfully finished
+2024-04-20 04:20:33,509 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000214.jpg) successfully finished
+2024-04-20 04:20:41,564 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000215.jpg) successfully finished
+2024-04-20 04:20:50,032 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000216.jpg) successfully finished
+2024-04-20 04:20:57,946 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000217.jpg) successfully finished
+2024-04-20 04:21:05,903 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000218.jpg) successfully finished
+2024-04-20 04:21:13,867 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000219.jpg) successfully finished
+2024-04-20 04:21:23,085 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000220.jpg) successfully finished
+2024-04-20 04:21:32,179 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000221.jpg) successfully finished
+2024-04-20 04:21:40,749 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000222.jpg) successfully finished
+2024-04-20 04:21:49,262 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000223.jpg) successfully finished
+2024-04-20 04:21:57,663 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000224.jpg) successfully finished
+2024-04-20 04:22:06,083 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000225.jpg) successfully finished
+2024-04-20 04:22:14,268 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000226.jpg) successfully finished
+2024-04-20 04:22:21,928 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000227.jpg) successfully finished
+2024-04-20 04:22:30,416 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000228.jpg) successfully finished
+2024-04-20 04:22:38,345 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000229.jpg) successfully finished
+2024-04-20 04:22:46,264 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000230.jpg) successfully finished
+2024-04-20 04:22:53,805 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000231.jpg) successfully finished
+2024-04-20 04:23:02,599 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000232.jpg) successfully finished
+2024-04-20 04:23:11,733 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000233.jpg) successfully finished
+2024-04-20 04:23:20,766 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000234.jpg) successfully finished
+2024-04-20 04:23:29,280 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000235.jpg) successfully finished
+2024-04-20 04:23:37,744 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000236.jpg) successfully finished
+2024-04-20 04:23:46,159 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000237.jpg) successfully finished
+2024-04-20 04:23:54,800 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000238.jpg) successfully finished
+2024-04-20 04:24:02,870 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000239.jpg) successfully finished
+2024-04-20 04:24:11,347 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000240.jpg) successfully finished
+2024-04-20 04:24:19,312 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000241.jpg) successfully finished
+2024-04-20 04:24:27,221 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000242.jpg) successfully finished
+2024-04-20 04:24:35,196 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000243.jpg) successfully finished
+2024-04-20 04:24:44,399 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000244.jpg) successfully finished
+2024-04-20 04:24:53,492 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000245.jpg) successfully finished
+2024-04-20 04:25:02,006 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000246.jpg) successfully finished
+2024-04-20 04:25:10,522 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000247.jpg) successfully finished
+2024-04-20 04:25:18,973 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000248.jpg) successfully finished
+2024-04-20 04:25:27,417 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000249.jpg) successfully finished
+2024-04-20 04:25:36,030 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000250.jpg) successfully finished
+2024-04-20 04:25:43,666 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000251.jpg) successfully finished
+2024-04-20 04:25:51,708 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000252.jpg) successfully finished
+2024-04-20 04:25:59,646 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000253.jpg) successfully finished
+2024-04-20 04:26:07,582 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000254.jpg) successfully finished
+2024-04-20 04:26:15,546 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000255.jpg) successfully finished
+2024-04-20 04:26:24,787 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000256.jpg) successfully finished
+2024-04-20 04:26:33,905 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000257.jpg) successfully finished
+2024-04-20 04:26:42,916 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000258.jpg) successfully finished
+2024-04-20 04:26:51,458 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000259.jpg) successfully finished
+2024-04-20 04:26:59,858 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000260.jpg) successfully finished
+2024-04-20 04:27:08,280 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000261.jpg) successfully finished
+2024-04-20 04:27:16,870 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000262.jpg) successfully finished
+2024-04-20 04:27:24,949 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000263.jpg) successfully finished
+2024-04-20 04:27:33,459 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000264.jpg) successfully finished
+2024-04-20 04:27:41,362 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000265.jpg) successfully finished
+2024-04-20 04:27:49,312 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000266.jpg) successfully finished
+2024-04-20 04:27:57,270 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000267.jpg) successfully finished
+2024-04-20 04:28:06,502 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000268.jpg) successfully finished
+2024-04-20 04:28:15,591 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000269.jpg) successfully finished
+2024-04-20 04:28:24,138 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000270.jpg) successfully finished
+2024-04-20 04:28:32,688 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000271.jpg) successfully finished
+2024-04-20 04:28:41,089 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000272.jpg) successfully finished
+2024-04-20 04:28:49,525 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000273.jpg) successfully finished
+2024-04-20 04:28:58,127 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000274.jpg) successfully finished
+2024-04-20 04:29:06,191 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000275.jpg) successfully finished
+2024-04-20 04:29:14,230 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000276.jpg) successfully finished
+2024-04-20 04:29:22,158 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000277.jpg) successfully finished
+2024-04-20 04:29:30,098 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000278.jpg) successfully finished
+2024-04-20 04:29:34,206 [ioloop.py:_run_callback()] - Exception in callback functools.partial(<function _HTTPConnection.__init__.<locals>.<lambda> at 0xffff90601160>, <Task finished name='Task-243364' coro=<_HTTPConnection.run() done, defined at /home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py:290> exception=SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1123)')>)
+Traceback (most recent call last):
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/ioloop.py", line 750, in _run_callback
+    ret = callback()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 287, in <lambda>
+    gen.convert_yielded(self.run()), lambda f: f.result()
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/simple_httpclient.py", line 340, in run
+    stream = await self.tcp_client.connect(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/tcpclient.py", line 292, in connect
+    stream = await stream.start_tls(
+  File "/home/biqu/moonraker-env/lib/python3.9/site-packages/tornado/iostream.py", line 1367, in _do_ssl_handshake
+    self.socket.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1123)
+2024-04-20 04:29:37,604 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000279.jpg) successfully finished
+2024-04-20 04:29:46,820 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000280.jpg) successfully finished
+2024-04-20 04:29:55,928 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000281.jpg) successfully finished
+2024-04-20 04:30:04,967 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000282.jpg) successfully finished
+2024-04-20 04:30:13,487 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000283.jpg) successfully finished
+2024-04-20 04:30:21,992 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000284.jpg) successfully finished
+2024-04-20 04:30:30,419 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000285.jpg) successfully finished
+2024-04-20 04:30:39,045 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000286.jpg) successfully finished
+2024-04-20 04:30:47,130 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000287.jpg) successfully finished
+2024-04-20 04:30:55,610 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000288.jpg) successfully finished
+2024-04-20 04:31:03,556 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000289.jpg) successfully finished
+2024-04-20 04:31:11,488 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000290.jpg) successfully finished
+2024-04-20 04:31:19,446 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000291.jpg) successfully finished
+2024-04-20 04:31:28,698 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000292.jpg) successfully finished
+2024-04-20 04:31:37,734 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000293.jpg) successfully finished
+2024-04-20 04:31:46,253 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000294.jpg) successfully finished
+2024-04-20 04:31:54,772 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000295.jpg) successfully finished
+2024-04-20 04:32:03,220 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000296.jpg) successfully finished
+2024-04-20 04:32:11,670 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000297.jpg) successfully finished
+2024-04-20 04:32:20,263 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000298.jpg) successfully finished
+2024-04-20 04:32:28,348 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000299.jpg) successfully finished
+2024-04-20 04:32:36,438 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000300.jpg) successfully finished
+2024-04-20 04:32:44,382 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000301.jpg) successfully finished
+2024-04-20 04:32:52,303 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000302.jpg) successfully finished
+2024-04-20 04:33:00,257 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000303.jpg) successfully finished
+2024-04-20 04:33:09,457 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000304.jpg) successfully finished
+2024-04-20 04:33:18,582 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000305.jpg) successfully finished
+2024-04-20 04:33:27,610 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000306.jpg) successfully finished
+2024-04-20 04:33:36,132 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000307.jpg) successfully finished
+2024-04-20 04:33:44,125 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000308.jpg) successfully finished
+2024-04-20 04:33:52,594 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000309.jpg) successfully finished
+2024-04-20 04:34:01,170 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000310.jpg) successfully finished
+2024-04-20 04:34:09,248 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000311.jpg) successfully finished
+2024-04-20 04:34:17,732 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000312.jpg) successfully finished
+2024-04-20 04:34:25,674 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000313.jpg) successfully finished
+2024-04-20 04:34:33,614 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000314.jpg) successfully finished
+2024-04-20 04:34:41,566 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000315.jpg) successfully finished
+2024-04-20 04:34:50,689 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000316.jpg) successfully finished
+2024-04-20 04:34:59,776 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000317.jpg) successfully finished
+2024-04-20 04:35:08,320 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000318.jpg) successfully finished
+2024-04-20 04:35:16,842 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000319.jpg) successfully finished
+2024-04-20 04:35:25,279 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000320.jpg) successfully finished
+2024-04-20 04:35:33,711 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000321.jpg) successfully finished
+2024-04-20 04:35:42,363 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000322.jpg) successfully finished
+2024-04-20 04:35:50,462 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000323.jpg) successfully finished
+2024-04-20 04:35:58,574 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000324.jpg) successfully finished
+2024-04-20 04:36:06,498 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000325.jpg) successfully finished
+2024-04-20 04:36:14,433 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000326.jpg) successfully finished
+2024-04-20 04:36:22,390 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000327.jpg) successfully finished
+2024-04-20 04:36:31,587 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000328.jpg) successfully finished
+2024-04-20 04:36:40,674 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000329.jpg) successfully finished
+2024-04-20 04:36:49,708 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000330.jpg) successfully finished
+2024-04-20 04:36:58,228 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000331.jpg) successfully finished
+2024-04-20 04:37:06,175 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000332.jpg) successfully finished
+2024-04-20 04:37:17,662 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000333.jpg) successfully finished
+2024-04-20 04:37:29,161 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000334.jpg) successfully finished
+2024-04-20 04:37:35,653 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000335.jpg) successfully finished
+2024-04-20 04:37:41,788 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000336.jpg) successfully finished
+2024-04-20 04:37:47,549 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000337.jpg) successfully finished
+2024-04-20 04:37:52,524 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000338.jpg) successfully finished
+2024-04-20 04:37:58,034 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000339.jpg) successfully finished
+2024-04-20 04:38:03,985 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000340.jpg) successfully finished
+2024-04-20 04:38:09,925 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000341.jpg) successfully finished
+2024-04-20 04:38:15,802 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000342.jpg) successfully finished
+2024-04-20 04:38:21,241 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000343.jpg) successfully finished
+2024-04-20 04:38:26,674 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000344.jpg) successfully finished
+2024-04-20 04:38:32,109 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000345.jpg) successfully finished
+2024-04-20 04:38:37,527 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000346.jpg) successfully finished
+2024-04-20 04:38:42,945 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000347.jpg) successfully finished
+2024-04-20 04:38:47,952 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000348.jpg) successfully finished
+2024-04-20 04:38:52,895 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000349.jpg) successfully finished
+2024-04-20 04:38:57,888 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000350.jpg) successfully finished
+2024-04-20 04:39:02,904 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000351.jpg) successfully finished
+2024-04-20 04:39:08,326 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000352.jpg) successfully finished
+2024-04-20 04:39:14,269 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000353.jpg) successfully finished
+2024-04-20 04:39:20,139 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000354.jpg) successfully finished
+2024-04-20 04:39:26,013 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000355.jpg) successfully finished
+2024-04-20 04:39:31,425 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000356.jpg) successfully finished
+2024-04-20 04:39:36,892 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000357.jpg) successfully finished
+2024-04-20 04:39:42,369 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000358.jpg) successfully finished
+2024-04-20 04:39:47,748 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000359.jpg) successfully finished
+2024-04-20 04:39:52,780 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000360.jpg) successfully finished
+2024-04-20 04:39:57,752 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000361.jpg) successfully finished
+2024-04-20 04:40:02,751 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000362.jpg) successfully finished
+2024-04-20 04:40:08,251 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000363.jpg) successfully finished
+2024-04-20 04:40:14,230 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000364.jpg) successfully finished
+2024-04-20 04:40:20,147 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000365.jpg) successfully finished
+2024-04-20 04:40:26,027 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000366.jpg) successfully finished
+2024-04-20 04:40:31,461 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000367.jpg) successfully finished
+2024-04-20 04:40:36,899 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000368.jpg) successfully finished
+2024-04-20 04:40:42,330 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000369.jpg) successfully finished
+2024-04-20 04:40:47,769 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000370.jpg) successfully finished
+2024-04-20 04:40:53,173 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000371.jpg) successfully finished
+2024-04-20 04:40:58,642 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000372.jpg) successfully finished
+2024-04-20 04:41:03,611 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000373.jpg) successfully finished
+2024-04-20 04:41:08,603 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000374.jpg) successfully finished
+2024-04-20 04:41:13,629 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000375.jpg) successfully finished
+2024-04-20 04:41:19,042 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000376.jpg) successfully finished
+2024-04-20 04:41:24,984 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000377.jpg) successfully finished
+2024-04-20 04:41:30,856 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000378.jpg) successfully finished
+2024-04-20 04:41:36,743 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000379.jpg) successfully finished
+2024-04-20 04:41:42,138 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000380.jpg) successfully finished
+2024-04-20 04:41:47,580 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000381.jpg) successfully finished
+2024-04-20 04:41:53,016 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000382.jpg) successfully finished
+2024-04-20 04:41:58,443 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000383.jpg) successfully finished
+2024-04-20 04:42:03,450 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000384.jpg) successfully finished
+2024-04-20 04:42:08,429 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000385.jpg) successfully finished
+2024-04-20 04:42:13,449 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000386.jpg) successfully finished
+2024-04-20 04:42:18,917 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000387.jpg) successfully finished
+2024-04-20 04:42:24,877 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000388.jpg) successfully finished
+2024-04-20 04:42:30,820 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000389.jpg) successfully finished
+2024-04-20 04:42:36,688 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000390.jpg) successfully finished
+2024-04-20 04:42:42,126 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000391.jpg) successfully finished
+2024-04-20 04:42:46,868 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000392.jpg) successfully finished
+2024-04-20 04:42:51,402 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000393.jpg) successfully finished
+2024-04-20 04:42:56,010 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000394.jpg) successfully finished
+2024-04-20 04:43:00,519 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000395.jpg) successfully finished
+2024-04-20 04:43:04,961 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000396.jpg) successfully finished
+2024-04-20 04:43:09,464 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000397.jpg) successfully finished
+2024-04-20 04:43:13,688 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000398.jpg) successfully finished
+2024-04-20 04:43:17,612 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000399.jpg) successfully finished
+2024-04-20 04:43:21,202 [shell_command.py:_check_proc_success()] - Command (wget http://localhost/webcam/?action=snapshot -O /tmp/timelapse/frame000400.jpg) successfully finished
+2024-04-20 04:47:49,083 [timelapse.py:render()] - start FFMPEG: /usr/bin/ffmpeg -r 30 -i '/tmp/timelapse/frame%6d.jpg' -threads 2 -g 5 -crf 23 -vcodec libx264 -pix_fmt yuv420p -an  '/tmp/timelapse/timelapse_Stackable_plant_support_80%.gcode_20240420_0447.mp4' -y
