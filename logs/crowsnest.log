@@ -26728,3 +26728,469 @@
 [04/19/24 05:17:21] crowsnest: V4L2 Control: Device: [cam 1]
 [04/19/24 05:17:21] crowsnest: V4L2 Control: Options: focus_automatic_continuous=0,focus_absolute=30
 [04/19/24 05:17:25] crowsnest: Starting ustreamer with Device /dev/video0 ...
+[04/19/24 05:17:27] crowsnest:  ... Done!
+[04/20/24 02:57:55] crowsnest: Shutdown or Killed by User!
+[04/20/24 02:57:55] crowsnest: Please come again :)
+[04/20/24 02:57:55] crowsnest: Goodbye...
+[04/20/24 02:58:04] crowsnest: crowsnest - A webcam Service for multiple Cams and Stream Services.
+[04/20/24 02:58:05] crowsnest: Version: v4.1.8-1-g6ac4711
+[04/20/24 02:58:05] crowsnest: Prepare Startup ...
+[04/20/24 02:58:05] crowsnest: INFO: Host information:
+[04/20/24 02:58:05] crowsnest: Host Info: Distribution: BTT-CB1 2.3.4 Bullseye
+[04/20/24 02:58:05] crowsnest: Host Info: Kernel: Linux 5.16.17-sun50iw9 aarch64
+[04/20/24 02:58:05] crowsnest: Host Info: Available CPU Cores: 4
+[04/20/24 02:58:05] crowsnest: Host Info: Available Memory: 1010636 kB
+[04/20/24 02:58:05] crowsnest: Host Info: Diskspace (avail. / total): 22G / 29G
+[04/20/24 02:58:05] crowsnest: INFO: Checking Dependencies
+[04/20/24 02:58:08] crowsnest: Dependency: 'crudini' found in /usr/bin/crudini.
+[04/20/24 02:58:09] crowsnest: Dependency: 'find' found in /usr/bin/find.
+[04/20/24 02:58:09] crowsnest: Dependency: 'xargs' found in /usr/bin/xargs.
+[04/20/24 02:58:09] crowsnest: Dependency: 'ustreamer' found in bin/ustreamer/src/ustreamer.bin.
+[04/20/24 02:58:09] crowsnest: Version Control: ustreamer new version available: 8f0acb2 (v5.57).
+[04/20/24 02:58:09] crowsnest: INFO: Print Configfile: '/home/biqu/printer_data/config/crowsnest.conf'
+[04/20/24 02:58:09] crowsnest:		[crowsnest]
+[04/20/24 02:58:09] crowsnest:		log_path: /home/biqu/printer_data/logs/crowsnest.log
+[04/20/24 02:58:09] crowsnest:		log_level: verbose
+[04/20/24 02:58:09] crowsnest:		delete_log: false
+[04/20/24 02:58:09] crowsnest:		no_proxy: false
+[04/20/24 02:58:09] crowsnest:		
+[04/20/24 02:58:09] crowsnest:		[cam 1]
+[04/20/24 02:58:09] crowsnest:		mode: ustreamer
+[04/20/24 02:58:09] crowsnest:		
+[04/20/24 02:58:09] crowsnest:		enable_rtsp: false
+[04/20/24 02:58:09] crowsnest:		rtsp_port: 8554
+[04/20/24 02:58:09] crowsnest:		port: 8080
+[04/20/24 02:58:09] crowsnest:		device: /dev/video0
+[04/20/24 02:58:09] crowsnest:		resolution: 640x480
+[04/20/24 02:58:09] crowsnest:		max_fps: 15
+[04/20/24 02:58:09] crowsnest:		v4l2ctl: focus_automatic_continuous=0,focus_absolute=30
+[04/20/24 02:58:09] crowsnest: INFO: Detect available Devices
+[04/20/24 02:58:09] crowsnest: INFO: Found 1 total available Device(s)
+[04/20/24 02:58:09] crowsnest: INFO: Found 1 available v4l2 (UVC) camera(s)
+[04/20/24 02:58:09] crowsnest: /dev/v4l/by-id/usb-046d_HD_Pro_Webcam_C920_5FE6995F-video-index0 -> /dev/video0
+[04/20/24 02:58:09] crowsnest: Supported Formats:
+[04/20/24 02:58:09] crowsnest:		[0]: 'YUYV' (YUYV 4:2:2)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x90
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x120
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 176x144
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x180
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 352x288
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 432x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x360
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x448
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x600
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 864x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 960x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1024x576
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1280x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1600x896
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1920x1080
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 2304x1296
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.500s (2.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 2304x1536
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.500s (2.000 fps)
+[04/20/24 02:58:09] crowsnest:		[1]: 'H264' (H.264, compressed)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x90
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x120
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 176x144
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x180
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 352x288
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 432x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x360
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x448
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x600
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 864x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 960x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1024x576
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1280x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1600x896
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1920x1080
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		[2]: 'MJPG' (Motion-JPEG, compressed)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x90
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 160x120
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 176x144
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x180
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 320x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 352x288
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 432x240
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 640x360
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x448
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 800x600
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 864x480
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 960x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1024x576
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1280x720
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1600x896
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:09] crowsnest:		Size: Discrete 1920x1080
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.033s (30.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.042s (24.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.050s (20.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.067s (15.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.100s (10.000 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.133s (7.500 fps)
+[04/20/24 02:58:09] crowsnest:		Interval: Discrete 0.200s (5.000 fps)
+[04/20/24 02:58:10] crowsnest: Supported Controls:
+[04/20/24 02:58:10] crowsnest:		
+[04/20/24 02:58:10] crowsnest:		User Controls
+[04/20/24 02:58:10] crowsnest:		
+[04/20/24 02:58:10] crowsnest:		brightness 0x00980900 (int)    : min=0 max=255 step=1 default=128 value=128
+[04/20/24 02:58:10] crowsnest:		contrast 0x00980901 (int)    : min=0 max=255 step=1 default=128 value=128
+[04/20/24 02:58:10] crowsnest:		saturation 0x00980902 (int)    : min=0 max=255 step=1 default=128 value=128
+[04/20/24 02:58:10] crowsnest:		white_balance_automatic 0x0098090c (bool)   : default=1 value=1
+[04/20/24 02:58:10] crowsnest:		gain 0x00980913 (int)    : min=0 max=255 step=1 default=0 value=0
+[04/20/24 02:58:10] crowsnest:		power_line_frequency 0x00980918 (menu)   : min=0 max=2 default=2 value=2
+[04/20/24 02:58:10] crowsnest:		0: Disabled
+[04/20/24 02:58:10] crowsnest:		1: 50 Hz
+[04/20/24 02:58:10] crowsnest:		2: 60 Hz
+[04/20/24 02:58:10] crowsnest:		white_balance_temperature 0x0098091a (int)    : min=2000 max=6500 step=1 default=4000 value=4000 flags=inactive
+[04/20/24 02:58:10] crowsnest:		sharpness 0x0098091b (int)    : min=0 max=255 step=1 default=128 value=128
+[04/20/24 02:58:10] crowsnest:		backlight_compensation 0x0098091c (int)    : min=0 max=1 step=1 default=0 value=0
+[04/20/24 02:58:10] crowsnest:		
+[04/20/24 02:58:10] crowsnest:		Camera Controls
+[04/20/24 02:58:10] crowsnest:		
+[04/20/24 02:58:10] crowsnest:		auto_exposure 0x009a0901 (menu)   : min=0 max=3 default=3 value=3
+[04/20/24 02:58:10] crowsnest:		1: Manual Mode
+[04/20/24 02:58:10] crowsnest:		3: Aperture Priority Mode
+[04/20/24 02:58:10] crowsnest:		exposure_time_absolute 0x009a0902 (int)    : min=3 max=2047 step=1 default=250 value=250 flags=inactive
+[04/20/24 02:58:10] crowsnest:		exposure_dynamic_framerate 0x009a0903 (bool)   : default=0 value=1
+[04/20/24 02:58:10] crowsnest:		pan_absolute 0x009a0908 (int)    : min=-36000 max=36000 step=3600 default=0 value=0
+[04/20/24 02:58:10] crowsnest:		tilt_absolute 0x009a0909 (int)    : min=-36000 max=36000 step=3600 default=0 value=0
+[04/20/24 02:58:10] crowsnest:		focus_absolute 0x009a090a (int)    : min=0 max=250 step=5 default=0 value=0 flags=inactive
+[04/20/24 02:58:10] crowsnest:		focus_automatic_continuous 0x009a090c (bool)   : default=1 value=1
+[04/20/24 02:58:10] crowsnest:		zoom_absolute 0x009a090d (int)    : min=100 max=500 step=1 default=100 value=100
+[04/20/24 02:58:10] crowsnest: Try to start configured Cams / Services...
+[04/20/24 02:58:15] crowsnest: INFO: Configuration of Section [cam 1] looks good. Continue ...
+[04/20/24 02:58:16] crowsnest: V4L2 Control: Device: [cam 1]
+[04/20/24 02:58:16] crowsnest: V4L2 Control: Options: focus_automatic_continuous=0,focus_absolute=30
