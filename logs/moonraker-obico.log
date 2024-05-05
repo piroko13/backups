@@ -1,0 +1,74 @@
+2024-05-05 02:11:16,345   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 02:11:16,401      INFO  obico.moonraker_conn - connection is open
+2024-05-05 02:11:16,491      INFO  obico.moonraker_conn - Klippy ready
+2024-05-05 02:11:16,649      INFO  obico.app - Fetching linked printer...
+2024-05-05 02:11:16,889      INFO  obico.app - Linked printer: {'is_pro': True, 'id': 177784, 'name': 'My Awesome Cloud Printer', 'retract_on_pause': 6.5}
+2024-05-05 02:11:16,897   WARNING  obico.app - Connections not ready. Trying again in 1s...
+2024-05-05 02:11:17,966      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 02:11:17,984      INFO  obico.janus - Starting webcam streamer
+2024-05-05 02:11:17,991      INFO  obico.webcam_stream - Not on a Raspberry Pi. Switching to MJPEG streaming
+2024-05-05 02:11:18,135   WARNING  obico.janus - Janus setup failed. Skipping Janus connection. Error: 
+b"dpkg-query: package 'janus' is not installed\nUse dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+2024-05-05 02:11:18,992      INFO  backoff - Backing off wait_for_janus(...) for 0.7s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:20,678      INFO  backoff - Backing off wait_for_janus(...) for 2.0s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:23,655      INFO  backoff - Backing off wait_for_janus(...) for 1.8s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:26,475      INFO  backoff - Backing off wait_for_janus(...) for 3.8s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:31,329      INFO  backoff - Backing off wait_for_janus(...) for 4.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:36,771      INFO  backoff - Backing off wait_for_janus(...) for 5.1s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:42,856      INFO  backoff - Backing off wait_for_janus(...) for 8.3s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:11:52,147      INFO  backoff - Backing off wait_for_janus(...) for 52.6s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:12:45,771      INFO  backoff - Backing off wait_for_janus(...) for 217.6s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 02:14:48,157      INFO  obico.app - detected state change: Operational -> Printing
+2024-05-05 02:14:48,515      INFO  obico.app - print event: PrintStarted (1714896887)
+2024-05-05 02:16:24,371     ERROR  backoff - Giving up wait_for_janus(...) after 10 tries (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 03:44:55,250      INFO  obico.app - detected state change: Printing -> Paused
+2024-05-05 03:44:55,253      INFO  obico.app - print event: PrintPaused (1714896887)
+2024-05-05 03:45:15,565      INFO  obico.app - detected state change: Paused -> Printing
+2024-05-05 03:45:15,568      INFO  obico.app - print event: PrintResumed (1714896887)
+2024-05-05 04:03:12,748      INFO  obico.app - detected state change: Printing -> Operational
+2024-05-05 04:03:12,750      INFO  obico.app - print event: PrintDone (1714896887)
+2024-05-05 04:38:13,376   WARNING  obico.ws - WS Closed - 1001 - Server Shutdown
+2024-05-05 04:38:13,391      INFO  obico.app - detected state change: Operational -> Offline
+2024-05-05 04:38:13,422   WARNING  obico.ws - WS Closed - None - None
+2024-05-05 04:40:13,674   WARNING  obico.moonraker_conn - Not connected to websocket server after 120s
+2024-05-05 04:40:13,690      INFO  obico.moonraker_conn - connection is open
+2024-05-05 04:40:13,779      INFO  obico.moonraker_conn - Klippy ready
+2024-05-05 04:40:13,875      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 04:50:17,103      INFO  obico.app - detected state change: Operational -> Offline
+2024-05-05 04:50:44,520      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 05:36:53,878      INFO  obico.app - detected state change: Operational -> Offline
+2024-05-05 05:37:17,731      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 05:52:23,509   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:23,762   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:24,061   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:30,902   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:31,150   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:31,406   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:51,736   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:51,977   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:52:52,222   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 05:54:03,240      INFO  obico.app - detected state change: Operational -> Printing
+2024-05-05 05:54:03,604      INFO  obico.app - print event: PrintStarted (1714910042)
+2024-05-05 05:55:36,736      INFO  obico.app - detected state change: Printing -> Offline
+2024-05-05 05:55:36,991      INFO  backoff - Backing off capture_jpeg(...) for 0.3s (AttributeError: 'ServerConn' object has no attribute 'snapshot_url')
+2024-05-05 05:55:37,264      INFO  backoff - Backing off capture_jpeg(...) for 1.9s (AttributeError: 'ServerConn' object has no attribute 'snapshot_url')
+2024-05-05 05:55:39,186     ERROR  backoff - Giving up capture_jpeg(...) after 3 tries (AttributeError: 'ServerConn' object has no attribute 'snapshot_url')
+2024-05-05 05:55:39,188   WARNING  obico.server_conn - Failed to capture jpeg - 'ServerConn' object has no attribute 'snapshot_url'
+2024-05-05 05:56:37,944      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 06:02:58,390      INFO  obico.app - detected state change: Operational -> Printing
+2024-05-05 06:02:58,770      INFO  obico.app - print event: PrintStarted (1714910578)
+2024-05-05 06:33:00,466      INFO  obico.app - detected state change: Printing -> Paused
+2024-05-05 06:33:00,469      INFO  obico.app - print event: PrintPaused (1714910578)
+2024-05-05 06:34:00,364      INFO  obico.app - detected state change: Paused -> Printing
+2024-05-05 06:34:00,367      INFO  obico.app - print event: PrintResumed (1714910578)
+2024-05-05 08:17:47,594      INFO  obico.app - detected state change: Printing -> Operational
+2024-05-05 08:17:47,601      INFO  obico.app - print event: PrintDone (1714910578)
+2024-05-05 08:17:21,799   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 08:17:22,037      INFO  backoff - Backing off ensure_api_key(...) for 0.6s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7edef490>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 08:17:22,665   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 08:17:22,681      INFO  backoff - Backing off ensure_api_key(...) for 0.0s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7dd3e1c0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 08:17:22,721   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 08:17:22,757      INFO  backoff - Backing off ensure_api_key(...) for 1.2s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7dd3eb20>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 08:17:24,013   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 08:17:24,034      INFO  backoff - Backing off ensure_api_key(...) for 7.5s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7dccc4c0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 08:17:31,507   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
