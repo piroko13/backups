@@ -72,3 +72,40 @@ b"dpkg-query: package 'janus' is not installed\nUse dpkg --contents (= dpkg-deb 
 2024-05-05 08:17:24,013   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
 2024-05-05 08:17:24,034      INFO  backoff - Backing off ensure_api_key(...) for 7.5s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff7dccc4c0>: Failed to establish a new connection: [Errno 111] Connection refused')))
 2024-05-05 08:17:31,507   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 08:17:31,570      INFO  obico.moonraker_conn - connection is open
+2024-05-05 08:17:31,678      INFO  obico.moonraker_conn - Klippy ready
+2024-05-05 08:17:32,051      INFO  obico.app - Fetching linked printer...
+2024-05-05 08:17:32,383      INFO  obico.app - Linked printer: {'is_pro': True, 'id': 177784, 'name': 'Ender 3 Neo', 'retract_on_pause': 6.5}
+2024-05-05 08:17:32,395   WARNING  obico.app - Connections not ready. Trying again in 1s...
+2024-05-05 08:17:33,587   WARNING  obico.app - error response from moonraker, Event(name='message', data={'jsonrpc': '2.0', 'error': {'code': 400, 'message': 'Invalid argument'}, 'id': 40933}, sender='moonrakerconn')
+2024-05-05 08:17:33,612      INFO  obico.app - detected state change: Offline -> Operational
+2024-05-05 08:17:33,616      INFO  obico.janus - Starting webcam streamer
+2024-05-05 08:17:33,635      INFO  obico.webcam_stream - Not on a Raspberry Pi. Switching to MJPEG streaming
+2024-05-05 08:17:33,999   WARNING  obico.janus - Janus setup failed. Skipping Janus connection. Error: 
+b"dpkg-query: package 'janus' is not installed\nUse dpkg --contents (= dpkg-deb --contents) to list archive files contents.\n"
+2024-05-05 08:17:34,668      INFO  backoff - Backing off wait_for_janus(...) for 0.2s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:17:35,836      INFO  backoff - Backing off wait_for_janus(...) for 0.9s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:17:37,725      INFO  backoff - Backing off wait_for_janus(...) for 3.0s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:17:41,749      INFO  backoff - Backing off wait_for_janus(...) for 6.4s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:17:49,194      INFO  backoff - Backing off wait_for_janus(...) for 6.7s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:17:56,855      INFO  backoff - Backing off wait_for_janus(...) for 12.9s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:18:05,602      INFO  obico.app - detected state change: Operational -> Printing
+2024-05-05 08:18:05,959      INFO  obico.app - print event: PrintStarted (1714918685)
+2024-05-05 08:18:10,797      INFO  backoff - Backing off wait_for_janus(...) for 29.1s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:34:04,968      INFO  backoff - Backing off wait_for_janus(...) for 74.8s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:35:20,781      INFO  backoff - Backing off wait_for_janus(...) for 151.0s (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 08:37:52,777     ERROR  backoff - Giving up wait_for_janus(...) after 10 tries (ConnectionRefusedError: [Errno 111] Connection refused)
+2024-05-05 10:07:51,799   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 10:07:52,081   WARNING  obico.webcam_capture - Failed to capture jpeg - 429 Client Error: Too Many Requests for url: https://app.obico.io/api/v1/octo/pic/
+2024-05-05 10:47:24,408      INFO  obico.app - detected state change: Printing -> Operational
+2024-05-05 10:47:24,411      INFO  obico.app - print event: PrintDone (1714918685)
+2024-05-05 10:17:22,490   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 10:17:22,761      INFO  backoff - Backing off ensure_api_key(...) for 0.4s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff884be490>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 10:17:23,149   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 10:17:23,169      INFO  backoff - Backing off ensure_api_key(...) for 0.8s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8740e1c0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 10:17:23,928   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 10:17:23,949      INFO  backoff - Backing off ensure_api_key(...) for 3.7s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8740eb20>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 10:17:27,642   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 10:17:27,657      INFO  backoff - Backing off ensure_api_key(...) for 6.3s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8739b4c0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+2024-05-05 10:17:33,957   WARNING  obico.moonraker_conn - api key is unset, trying to fetch one
+2024-05-05 10:17:33,972      INFO  backoff - Backing off ensure_api_key(...) for 12.6s (requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=7125): Max retries exceeded with url: /access/api_key (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff8739be20>: Failed to establish a new connection: [Errno 111] Connection refused')))

@@ -2351,3 +2351,91 @@ print_sort_dir = date_desc
     }
   }
 ]
+2024-05-05 08:17:25,095 [config.py:create_translations()] - Selected lang: None OS lang: en_US
+2024-05-05 08:17:25,096 [config.py:install_language()] - Using lang en
+2024-05-05 08:17:25,158 [screen.py:__init__()] - Monitors: 1 using number: 0
+2024-05-05 08:17:25,169 [screen.py:__init__()] - Wayland: False Display name: :0
+2024-05-05 08:17:25,180 [screen.py:__init__()] - Screen resolution: 480x320
+2024-05-05 08:17:25,185 [KlippyGtk.py:__init__()] - Font size: 11.0 (medium)
+2024-05-05 08:17:27,642 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-05-05 08:17:27,659 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-05-05 08:17:27,673 [screen.py:initial_connection()] - Default printer: None
+2024-05-05 08:17:27,761 [screen.py:connect_printer()] - Connecting to printer: Ender 3 NEO
+2024-05-05 08:17:27,763 [screen.py:_load_panel()] - Loading panel: splash_screen
+2024-05-05 08:17:27,874 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2024-05-05 08:17:27,890 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/info
+2024-05-05 08:17:27,909 [KlippyRest.py:_do_request()] - host=127.0.0.1, port=7125>>Max retries exceeded with url>>Failed to establish a new connection>>[Errno 111] Connection refused
+2024-05-05 08:17:27,909 [screen.py:connect_to_moonraker()] - Moonraker not connected
+2024-05-05 08:17:31,948 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/info
+2024-05-05 08:17:31,994 [KlippyWebsocket.py:connect()] - Attempting to connect
+2024-05-05 08:17:31,995 [KlippyWebsocket.py:connect()] - Starting websocket thread
+2024-05-05 08:17:32,026 [_logging.py:info()] - Websocket connected
+2024-05-05 08:17:32,028 [KlippyWebsocket.py:on_open()] - Moonraker Websocket Open
+2024-05-05 08:17:32,032 [screen.py:websocket_connected()] - ### websocket_connected
+2024-05-05 08:17:33,870 [KlippyWebsocket.py:identify_client()] - Sending server.connection.identify
+2024-05-05 08:17:33,878 [base_panel.py:set_ks_printer_cfg()] - Titlebar name type: full items: ['MCU', 'pi']
+2024-05-05 08:17:33,880 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/machine/device_power/devices
+2024-05-05 08:17:33,915 [printer.py:configure_power_devices()] - Processing power devices: {'devices': [{'device': 'relay', 'status': 'on', 'locked_while_printing': False, 'type': 'klipper_device', 'is_shutdown': False}]}
+2024-05-05 08:17:33,918 [printer.py:configure_power_devices()] - Power devices: {'relay': {'status': 'on'}}
+2024-05-05 08:17:33,919 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/webcams/list
+2024-05-05 08:17:33,951 [printer.py:configure_cameras()] - Cameras: [{'name': 'Logitech', 'enabled': True, 'icon': 'mdiWebcam', 'aspect_ratio': '4:3', 'target_fps': 15, 'target_fps_idle': 15, 'location': 'printer', 'service': 'mjpegstreamer-adaptive', 'stream_url': '/webcam/?action=stream', 'snapshot_url': '/webcam/?action=snapshot', 'flip_horizontal': False, 'flip_vertical': False, 'rotation': 0, 'source': 'database', 'extra_data': {}, 'uid': 'ca5a12bb-b321-4097-81ea-35079d714b16'}]
+2024-05-05 08:17:33,954 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/info
+2024-05-05 08:17:34,012 [screen.py:init_klipper()] - Moonraker info {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'http_client', 'announcements', 'webcam', 'extensions', 'power', 'update_manager', 'history', 'timelapse', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'timelapse', 'timelapse_frames', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 2, 'moonraker_version': 'v0.8.0-343-g0f2e3d7', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}
+2024-05-05 08:17:34,013 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/printer/info
+2024-05-05 08:17:34,050 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/printer/objects/query?configfile
+2024-05-05 08:17:34,284 [printer.py:stop_tempstore_updates()] - Stopping tempstore
+2024-05-05 08:17:34,286 [printer.py:reinit()] - Klipper version: v0.12.0-159-g2425a746-dirty
+2024-05-05 08:17:34,286 [printer.py:reinit()] - # Extruders: 1
+2024-05-05 08:17:34,287 [printer.py:reinit()] - # Temperature devices: 1
+2024-05-05 08:17:34,288 [printer.py:reinit()] - # Fans: 3
+2024-05-05 08:17:34,288 [printer.py:reinit()] - # Output pins: 1
+2024-05-05 08:17:34,288 [printer.py:reinit()] - # Leds: 35
+2024-05-05 08:17:34,289 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/printer/gcode/help
+2024-05-05 08:17:34,326 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&manual_probe&extruder&heater_bed&fan&controller_fan controller_fan&heater_fan heatbreak_cooling_fan&filament_switch_sensor switch_sensor&filament_motion_sensor encoder_sensor&output_pin relay&neopixel sb_leds&neopixel SKR_screen
+2024-05-05 08:17:34,538 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2024-05-05 08:17:34,538 [KlippyWebsocket.py:object_subscription()] - {'objects': {'bed_mesh': ['profile_name', 'mesh_max', 'mesh_min', 'probed_matrix', 'profiles'], 'configfile': ['config'], 'display_status': ['progress', 'message'], 'fan': ['speed'], 'gcode_move': ['extrude_factor', 'gcode_position', 'homing_origin', 'speed_factor', 'speed'], 'idle_timeout': ['state'], 'pause_resume': ['is_paused'], 'print_stats': ['print_duration', 'total_duration', 'filament_used', 'filename', 'state', 'message', 'info'], 'toolhead': ['homed_axes', 'estimated_print_time', 'print_time', 'position', 'extruder', 'max_accel', 'minimum_cruise_ratio', 'max_velocity', 'square_corner_velocity'], 'virtual_sdcard': ['file_position', 'is_active', 'progress'], 'webhooks': ['state', 'state_message'], 'firmware_retraction': ['retract_length', 'retract_speed', 'unretract_extra_length', 'unretract_speed'], 'motion_report': ['live_position', 'live_velocity', 'live_extruder_velocity'], 'exclude_object': ['current_object', 'objects', 'excluded_objects'], 'manual_probe': ['is_active'], 'screws_tilt_adjust': ['results', 'error'], 'extruder': ['target', 'temperature', 'pressure_advance', 'smooth_time', 'power'], 'heater_bed': ['target', 'temperature', 'power'], 'controller_fan controller_fan': ['speed'], 'heater_fan heatbreak_cooling_fan': ['speed'], 'filament_switch_sensor switch_sensor': ['enabled', 'filament_detected'], 'filament_motion_sensor encoder_sensor': ['enabled', 'filament_detected'], 'output_pin relay': ['value'], 'neopixel sb_leds': ['color_data'], 'neopixel SKR_screen': ['color_data']}}
+2024-05-05 08:17:34,540 [files.py:set_gcodes_path()] - Gcodes path: /home/biqu/printer_data/gcodes
+2024-05-05 08:17:34,541 [screen.py:init_klipper()] - Printer initialized
+2024-05-05 08:17:34,542 [printer.py:change_state()] - Changing state from 'disconnected' to 'ready'
+2024-05-05 08:17:34,543 [printer.py:change_state()] - Adding callback for state: ready
+2024-05-05 08:17:34,731 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-05-05 08:17:34,745 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-05-05 08:17:34,793 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2024-05-05 08:17:34,808 [screen.py:_load_panel()] - Loading panel: main_menu
+2024-05-05 08:17:35,193 [main_menu.py:__init__()] - ### Making MainMenu
+2024-05-05 08:17:35,221 [main_menu.py:add_device()] - Adding device: extruder
+2024-05-05 08:17:35,232 [main_menu.py:add_device()] - Adding device: heater_bed
+2024-05-05 08:17:35,329 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2024-05-05 08:17:35,333 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/temperature_store
+2024-05-05 08:17:35,377 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'extruder']
+2024-05-05 08:17:35,383 [KlippyRest.py:_do_request()] - Sending get to http://127.0.0.1:7125/server/config
+2024-05-05 08:17:35,422 [screen.py:init_tempstore()] - Temperature store size: 1200
+2024-05-05 08:18:01,212 [screen.py:_load_panel()] - Loading panel: print
+2024-05-05 08:18:01,280 [print.py:__init__()] - Thumbsize: 76.13793103448276
+2024-05-05 08:18:01,284 [print.py:__init__()] - thumbs
+2024-05-05 08:18:01,295 [KlippyWebsocket.py:get_dir_info()] - Sending server.files.get_directory  gcodes
+2024-05-05 08:18:01,325 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > print
+2024-05-05 08:18:02,524 [print.py:load_files()] - Loaded in 0.585 seconds
+2024-05-05 08:18:03,889 [KlippyGtk.py:Dialog()] - Showing dialog Print Stackable_plant_support_PLA_1h56m.gcode (width=480, height=320)
+2024-05-05 08:18:05,228 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2024-05-05 08:18:05,229 [print.py:confirm_print_response()] - Starting print: Stackable_plant_support_PLA_1h56m.gcode
+2024-05-05 08:18:05,230 [KlippyWebsocket.py:print_start()] - Sending printer.print.start
+2024-05-05 08:18:05,358 [printer.py:change_state()] - Changing state from 'ready' to 'printing'
+2024-05-05 08:18:05,359 [printer.py:change_state()] - Adding callback for state: printing
+2024-05-05 08:18:05,467 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-05-05 08:18:05,481 [screen.py:set_screenblanking_timeout()] - Using DPMS
+2024-05-05 08:18:05,502 [screen.py:_load_panel()] - Loading panel: job_status
+2024-05-05 08:18:05,693 [job_status.py:create_status_grid()] - Titlebar items: ['MCU', 'pi']
+2024-05-05 08:18:05,750 [screen.py:attach_panel()] - Current panel hierarchy: job_status
+2024-05-05 08:18:05,766 [job_status.py:set_state()] - Changing job_status state from 'standby' to 'printing'
+2024-05-05 08:18:05,804 [job_status.py:update_file_metadata()] - Update Metadata. File: Stackable_plant_support_PLA_1h56m.gcode Size: 6514584
+2024-05-05 08:18:05,814 [job_status.py:show_file_thumbnail()] - Stackable_plant_support_PLA_1h56m.gcode
+2024-05-05 09:33:30,023 [screen.py:show_screensaver()] - Showing Screensaver
+2024-05-05 10:10:45,770 [screen.py:close_screensaver()] - Closing Screensaver
+2024-05-05 10:10:45,837 [screen.py:wake_screen()] - Screen wake up
+2024-05-05 10:47:24,144 [printer.py:change_state()] - Changing state from 'printing' to 'ready'
+2024-05-05 10:47:24,144 [printer.py:change_state()] - Adding callback for state: ready
+2024-05-05 10:47:24,169 [job_status.py:set_state()] - Changing job_status state from 'printing' to 'complete'
+2024-05-05 10:47:24,191 [screen.py:_websocket_callback()] - Power status changed: {'device': 'relay', 'status': 'off', 'locked_while_printing': False, 'type': 'klipper_device', 'is_shutdown': False}
+2024-05-05 10:47:24,246 [screen.py:set_screenblanking_timeout()] - Changing screen blanking to: 3600
+2024-05-05 10:47:24,260 [screen.py:set_screenblanking_timeout()] - Using DPMS
